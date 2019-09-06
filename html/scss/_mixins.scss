@@ -1,0 +1,271 @@
+// BREAKPOINTS
+//
+// @include breakpoint(breakpointname) {
+//     /* Styles */
+// }
+@mixin breakpoint($point) {
+    @if $point==Xtralgdesktop {
+        @media (max-width: 1919px) {
+            @content ;
+        }
+    }
+    @else if $point==lgdesktop {
+        @media (max-width: 1699px) {
+            @content ;
+        }
+    }
+    @else if $point==mddesktop {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+    @else if $point==smdesktop {
+        @media (max-width: 1299px) {
+            @content ;
+        }
+    }
+    @else if $point==desktop {
+        @media (max-width: 1199px) {
+            @content ;
+        }
+    }
+    @else if $point==laptop {
+        @media (max-width: 1023px) {
+            @content ;
+        }
+    }
+    @else if $point==tablet {
+        @media (max-width: 991px) {
+            @content ;
+        }
+    }
+    @else if $point==mobile {
+        @media (max-width: 767px) {
+            @content ;
+        }
+    }
+    @else if $point==mediummobile {
+        @media (max-width: 639px) {
+            @content ;
+        }
+    }
+    @else if $point==smallmobile {
+        @media (max-width: 479px) {
+            @content ;
+        }
+    }
+    @else if $point==xsmobile {
+        @media (max-width: 359px) {
+            @content ;
+        }
+    }
+}
+
+// --------------------------------------------------
+// Flexbox SASS mixins
+// --------------------------------------------------
+// Flexbox display
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around 
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch 
+@mixin align-content($align) {
+    -webkit-align-content: $align;
+    -moz-align-content: $align;
+    -ms-align-content: $align;
+    align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch 
+@mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    align-items: $align;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+    -webkit-flex-flow: $flow;
+    -moz-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+    order: $val;
+}
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch 
+@mixin align-self($align) {
+    -webkit-align-self: $align;
+       -moz-align-self: $align;
+        -ms-align-self: $align;
+            align-self: $align;
+  }
+//
+// Emphasis & misc
+// 
+@mixin fullwidth {
+    float: left;
+    width: 100%;
+}
+
+// UL Unstyle
+@mixin list-unstyle {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+// Placeholder Color
+@mixin input-placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+// Image Cover
+@mixin imageCover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+//
+// Transform Center
+// 
+@mixin transform-center {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+//
+// Transform TranslateX
+// 
+@mixin translateY {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+//
+// Transform TranslateX
+// 
+@mixin translateX {
+    transform: TranslateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+//
+// Transform Rotate
+// 
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+//
+// Transform Scale
+// 
+@mixin transform-scale($scale) {
+    -webkit-transform: Scale($scale);
+    -moz-transform: Scale($scale);
+    -ms-transform: Scale($scale);
+    -o-transform: Scale($scale);
+    transform: Scale($scale);
+}
+
+//
+// Transition 
+// 
+@mixin transition-all($all-duration) {
+    transition: $all-duration;
+    -webkit-transition: $all-duration;
+    -moz-transition: $all-duration;
+    -ms-transition: $all-duration;
+    -o-transition: $all-duration;
+}
+
+//
+// Border
+//
+
+@mixin border-top-radius ($border-top-radius) {
+-webkit-border-top-left-radius: $border-top-radius;
+-webkit-border-top-right-radius: $border-top-radius;
+-moz-border-radius-topleft: $border-top-radius;
+-moz-border-radius-topright: $border-top-radius;
+border-top-left-radius: $border-top-radius;
+border-top-right-radius: $border-top-radius;
+}
+@mixin border-bottom-radius ($border-bottom-radius) {
+    -webkit-border-bottom-left-radius: $border-bottom-radius;
+    -webkit-border-bottom-right-radius: $border-bottom-radius;
+    -moz-border-radius-bottomleft: $border-bottom-radius;
+    -moz-border-radius-bottomright: $border-bottom-radius;
+    border-bottom-left-radius: $border-bottom-radius;
+    border-bottom-right-radius: $border-bottom-radius;
+    }
+
+
+// Box shadow
+@mixin box-shadow () {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(130,130,130,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(130,130,130,1);
+    box-shadow: 0px 0px 10px 0px rgba(130,130,130,1);
+}
