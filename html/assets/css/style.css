@@ -7655,10 +7655,67 @@ h2 {
     min-height: 100px; }
   .site-nav .logo {
     max-width: 255px; }
-  .site-nav.hover-state {
-    background-color: #fff; }
-    .site-nav.hover-state ul li a {
-      color: #000 !important; }
+
+.site-nav.hover-state {
+  background-color: #fff; }
+  .site-nav.hover-state ul.site-menu-list li a {
+    color: #000 !important; }
+  .site-nav.hover-state ul.site-menu-list li:hover a {
+    color: #fd7e14 !important; }
+  .site-nav.hover-state ul.site-menu-list li:hover li a {
+    color: #fff !important; }
+  .site-nav.hover-state ul.site-menu-list li.has-subMenu a {
+    background: url("../images/arrow-down-black.png") right center no-repeat;
+    background-size: 15px;
+    padding-right: 22px; }
+  .site-nav.hover-state ul.site-menu-list li.has-subMenu:hover a {
+    background: url("../images/arrow-down-orange.png") right center no-repeat;
+    background-size: 15px; }
+  .site-nav.hover-state ul.sub-menu-list li a {
+    color: #fff !important; }
+
+ul.site-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline; }
+  ul.site-menu-list li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 35px 0px;
+    color: #fff; }
+    ul.site-menu-list li a {
+      color: #fff !important;
+      font-size: 13pt;
+      display: block; }
+    ul.site-menu-list li:hover a {
+      color: #fd7e14 !important; }
+    ul.site-menu-list li:hover .site-header {
+      background-color: #fff; }
+    ul.site-menu-list li:hover .sub-menu {
+      display: block; }
+  ul.site-menu-list li.has-subMenu a {
+    background: url("../images/arrow-down-white.png") right center no-repeat;
+    background-size: 15px;
+    padding-right: 22px; }
+
+ul.sub-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.sub-menu-list li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 10px;
+    padding: 0; }
+    ul.sub-menu-list li a {
+      display: block;
+      color: #fff !important;
+      border: 1px solid #fff;
+      padding: 5px 15px;
+      font-size: 12pt;
+      text-align: center;
+      background: none !important; }
 
 .site-header {
   background: url("../images/home-img.jpg") center center no-repeat;
@@ -7698,43 +7755,6 @@ h2 {
       /* IE6-9 */ }
     .site-header .head-title:first-child:before {
       display: none; }
-
-.site-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline; }
-  .site-menu ul li {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 35px 0px;
-    color: #fff; }
-    .site-menu ul li a {
-      color: #fff !important;
-      font-size: 13pt; }
-    .site-menu ul li:hover a {
-      color: #fd7e14 !important; }
-    .site-menu ul li:hover .site-header {
-      background-color: #fff; }
-    .site-menu ul li:hover .sub-menu {
-      display: block; }
-.site-menu ul ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .site-menu ul ul li {
-    display: inline-block;
-    color: #fff;
-    margin: 0 10px;
-    padding: 0; }
-    .site-menu ul ul li a {
-      display: block;
-      color: #fff !important;
-      border: 1px solid #fff;
-      padding: 5px 15px;
-      font-size: 12pt; }
-      .site-menu ul ul li a:hover {
-        background-color: #000; }
 
 .btn-primary {
   background-color: #fd7e14 !important;
