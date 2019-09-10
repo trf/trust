@@ -7881,6 +7881,7 @@ ul.sub-menu-list {
 
 .article {
   min-height: 300px;
+  height: 100%;
   border: 1px solid #555555;
   display: block; }
   .article small {
