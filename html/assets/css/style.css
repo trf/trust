@@ -7788,12 +7788,13 @@ ul.sub-menu-list {
   bottom: 20px;
   z-index: 2;
   text-align: center; }
-  .page-down button {
+  .page-down .button {
     width: 35px;
     height: 35px;
     background: url("../images/icon-page-down.png") 0 0 no-repeat;
     background-size: 100%;
-    border: none; }
+    border: none;
+    display: inline-block; }
 
 .vh {
   height: 100vh; }

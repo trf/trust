@@ -1,9 +1,20 @@
 $(document).ready(function(){
 
+      //Smooth scroll
+      $('.page-down .button').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        $target = $(target);
+        var scrollToPosition = $(target).offset().top;
+        $('html, body').animate({
+            'scrollTop': scrollToPosition
+        }, 900, 'swing');
+    });
+
+
   //mobile menu
   $(".menu-item-2, .menu-item-3").hover(function(){
    $(".app-nav").toggleClass("hover-state");
-
   });
 
 
