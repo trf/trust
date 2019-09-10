@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //mobile menu
   $(".menu-item-2, .menu-item-3").hover(function(){
-   $(".site-nav").toggleClass("hover-state");
+   $(".app-nav").toggleClass("hover-state");
 
   });
 
@@ -16,7 +16,7 @@ $(function(){
   function swipeHandler( event ){
     //$( event.target ).addClass( "swipe" );
     //$( "body" ).addClass( "swipe" );
-    $(".site-wrapper").removeClass("moveLeft");
+    $(".app-wrapper").removeClass("moveLeft");
     $(".before-login").removeClass("moveLeft");
     $(".wrapper-normal").toggleClass("moveLeft");
     $(".main-application").toggleClass("moveLeft");

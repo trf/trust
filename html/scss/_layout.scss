@@ -41,7 +41,7 @@ h1,h2,h3,h4 {font-family: 'Knowledge-bold';}
 	position: relative;
 	z-index: 9;
 }
-.site-nav {
+.app-nav {
 	.row {
 		min-height: 100px;
 	}
@@ -50,31 +50,30 @@ h1,h2,h3,h4 {font-family: 'Knowledge-bold';}
 	}
 }
 .position-relative {
-	.site-nav {
+	.app-nav {
 		position: absolute;
 		top: 0;
 		width: 100%;
 		z-index: 9;
 	}
 }
-
-.site-nav.hover-state {
+.app-nav.hover-state {
 	background-color: $white;
-	ul.site-menu-list li a {
+	ul.app-menu-list li a {
 		color: $black !important;
 	}
-	ul.site-menu-list li:hover a {
+	ul.app-menu-list li:hover a {
 		color: $orange !important;
 	}
-	ul.site-menu-list li:hover li a {
+	ul.app-menu-list li:hover li a {
 		color: $white !important;
 	}
-	ul.site-menu-list li.has-subMenu a {
+	ul.app-menu-list li.has-subMenu a {
 		background: url("../images/arrow-down-black.png") right center no-repeat;
 		background-size: 15px;
 		padding-right: 22px;
 	}
-	ul.site-menu-list li.has-subMenu:hover a {
+	ul.app-menu-list li.has-subMenu:hover a {
 		background: url("../images/arrow-down-orange.png") right center no-repeat;
 		background-size: 15px;
 	}
@@ -83,7 +82,7 @@ h1,h2,h3,h4 {font-family: 'Knowledge-bold';}
 	}
 }
 
-ul.site-menu-list {
+ul.app-menu-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -101,7 +100,7 @@ ul.site-menu-list {
 		&:hover a {
 			color: $orange !important;
 		}
-		&:hover .site-header   {
+		&:hover .app-header   {
 			background-color:$white; 
 		}
 		&:hover .sub-menu {
@@ -138,7 +137,7 @@ ul.sub-menu-list {
 	}
 }
 
-.site-header {
+.app-header {
 	position: relative;
 	background: url("../images/home-img.jpg") center center no-repeat;
 	background-size: 100% 100%;
@@ -216,8 +215,9 @@ ul.sub-menu-list {
 .vh {
 	height: 100vh;
 }
-/******************************************/
+/******************* End ***********************/
 
+/******************* Home sections start *******/
 .about-short {
 	background: $light-gray;
 	p {
@@ -235,7 +235,7 @@ ul.sub-menu-list {
 	}
 }
 .extra-content {
-	font-size: 13pt;
+	font-size: 12pt;
 }
 .text-white {
 	.time {
@@ -252,6 +252,7 @@ ul.sub-menu-list {
 .testimonial-title {
 	position: relative;
 	min-height:400px;
+	height:100%;
 	.content {
 		position: absolute;
 		bottom: 0;
@@ -278,6 +279,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .testimonial-description {
 	min-height:400px;
 	border:1px solid #252525;
+	padding: 30px;
+	h3 {
+		color: $orange;
+		font-size: 14pt;
+	}
+	p {
+		font-size: 18pt;
+		line-height: 35px;
+		font-style: italic;
+		background: url("../images/comma.png") 0 0 no-repeat;
+		background-size: 15px;
+		padding-top: 30px;
+	}
+
+	.person {
+		img {
+			max-width: 80px;
+			margin-right: 15px;
+		}
+		h4 {
+			font-size: 13pt;
+			line-height: 20px;
+			span {
+				font-family: 'Knowledge-Regular';
+			}
+		}
+	}
 }
 .article {
 	min-height:300px;
@@ -291,8 +319,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		font-size: 23px;
 	}
 }
+/******************* End *******/
 
-
+/******************* Footer start *******/
+.app-footer {
+	margin-top: 40px;
+	background-color: $light-gray;
+	color: $white;
+	h6 {
+		font-style: 13pt;
+		margin-bottom: 25px;
+		font-family: 'Knowledge-Bold';
+	}
+	ul.footer-nav {
+		list-style: none;
+		margin: 0 0 30px 0px;
+		padding: 0;
+		li {
+			margin: 0 0 10px 0px;
+			padding: 0;	
+		}
+		a {
+			color: $white;
+			font-style: 12pt;
+		}
+	}
+}
+.copyright {
+	background-color: $dark-gray;
+	padding: 20px 0px;
+}
+.footer-logo {
+	img {
+		max-width: 220px;
+	}
+}
+.policy-links {
+	a {
+		margin-left: 20px;
+		font-size: 11pt;
+	}
+}
 
 @include breakpoint(mobile) {
 
