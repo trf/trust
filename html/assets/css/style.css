@@ -7623,7 +7623,8 @@ html, body {
 body {
   min-width: 445px;
   font-family: 'Knowledge-Light';
-  font-size: 14pt; }
+  font-size: 16px;
+  color: #000; }
 
 a, button {
   cursor: pointer;
@@ -7688,7 +7689,8 @@ ul.app-menu-list {
     color: #fff; }
     ul.app-menu-list li a {
       color: #fff !important;
-      font-size: 13pt;
+      font-size: 16px;
+      font-family: 'Knowledge-Regular';
       display: block; }
     ul.app-menu-list li:hover a {
       color: #fd7e14 !important; }
@@ -7726,7 +7728,7 @@ ul.sub-menu-list {
   width: 100%; }
   .app-header h3 {
     color: #fff;
-    font-size: 30pt; }
+    font-size: 50px; }
   .app-header .head-title {
     position: relative; }
     .app-header .head-title:hover {
@@ -7762,7 +7764,7 @@ ul.sub-menu-list {
   background-color: #fd7e14 !important;
   border-color: #fd7e14 !important;
   border-radius: 0px;
-  font-size: 12pt;
+  font-size: 16px;
   padding: 10px 25px; }
 
 .sub-menu {
@@ -7804,19 +7806,27 @@ ul.sub-menu-list {
 .about-short {
   background: #555555; }
   .about-short p {
-    font-size: 16pt; }
+    font-size: 30px; }
+  .about-short h2 {
+    font-size: 50px; }
 
 .feature-post {
   border-bottom: 1px solid #252525; }
+  .feature-post h3 {
+    font-size: 35px;
+    color: #000; }
+  .feature-post p {
+    font-size: 23px; }
   .feature-post .btn {
     color: #fd7e14;
     font-family: 'Knowledge-Medium';
     background: url("../images/arrow-right-org.png") right center no-repeat;
     background-size: 15px;
-    padding: 0 20px 0 0px; }
+    padding: 0 20px 0 0px;
+    font-size: 17px; }
 
 .extra-content {
-  font-size: 12pt; }
+  font-size: 17px; }
 
 .text-white .time {
   background: url("../images/icon-time-white.png") 0 center no-repeat;
@@ -7849,7 +7859,8 @@ ul.sub-menu-list {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 );
     /* IE6-9 */ }
   .testimonial-title h2 {
-    font-family: 'Knowledge-Bold'; }
+    font-family: 'Knowledge-Bold';
+    font-size: 47px; }
 
 .mt {
   margin-top: 30px; }
@@ -7863,9 +7874,9 @@ ul.sub-menu-list {
   padding: 30px; }
   .testimonial-description h3 {
     color: #fd7e14;
-    font-size: 14pt; }
+    font-size: 18px; }
   .testimonial-description p {
-    font-size: 18pt;
+    font-size: 22.5px;
     line-height: 35px;
     font-style: italic;
     background: url("../images/comma.png") 0 0 no-repeat;
@@ -7875,7 +7886,7 @@ ul.sub-menu-list {
     max-width: 80px;
     margin-right: 15px; }
   .testimonial-description .person h4 {
-    font-size: 13pt;
+    font-size: 18px;
     line-height: 20px; }
     .testimonial-description .person h4 span {
       font-family: 'Knowledge-Regular'; }
@@ -7887,9 +7898,11 @@ ul.sub-menu-list {
   display: block; }
   .article small {
     color: #fd7e14;
-    font-family: 'Knowledge-Bold'; }
+    font-family: 'Knowledge-Bold';
+    font-size: 15.5px; }
   .article h4 {
-    font-size: 23px; }
+    font-size: 28px;
+    margin: 10px 0  20px 0px; }
 
 /******************* End *******/
 /******************* Footer start *******/
@@ -7898,7 +7911,7 @@ ul.sub-menu-list {
   background-color: #555555;
   color: #fff; }
   .app-footer h6 {
-    font-style: 13pt;
+    font-size: 13.5px;
     margin-bottom: 25px;
     font-family: 'Knowledge-Bold'; }
   .app-footer ul.footer-nav {
@@ -7910,7 +7923,8 @@ ul.sub-menu-list {
       padding: 0; }
     .app-footer ul.footer-nav a {
       color: #fff;
-      font-style: 12pt; }
+      font-size: 14px;
+      font-family: 'Knowledge-Regular'; }
 
 .copyright {
   background-color: #262626;
@@ -7921,6 +7935,7 @@ ul.sub-menu-list {
 
 .policy-links a {
   margin-left: 20px;
-  font-size: 11pt; }
+  font-size: 14px;
+  color: #cecece !important; }
 
 /*# sourceMappingURL=style.css.map */

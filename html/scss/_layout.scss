@@ -28,7 +28,7 @@
 	font-style: normal;
 }
 html, body {overflow-x:hidden; height: 100%; }
-body { min-width: 445px; font-family: 'Knowledge-Light'; font-size: 14pt}
+body { min-width: 445px; font-family: 'Knowledge-Light'; font-size: 16px; color: $black;}
 a, button { cursor: pointer; outline: 0px !important; text-decoration: none}
 strong {font-family: 'Knowledge-Medium'; font-weight: 400;}
 img {max-width: 100%;}
@@ -94,7 +94,8 @@ ul.app-menu-list {
 		color: $white;
 		a {
 			color: $white !important;
-			font-size:13pt;
+			font-size:16px;
+			font-family: 'Knowledge-Regular';
 			display: block;
 		}
 		&:hover a {
@@ -144,7 +145,7 @@ ul.sub-menu-list {
 	width: 100%;
 	h3 {
 		color: $white;
-		font-size: 30pt;
+		font-size: 50px;
 	}
 	.head-title {
 		position: relative;
@@ -177,7 +178,7 @@ ul.sub-menu-list {
 	background-color: $orange !important;
 	border-color: $orange !important;
 	border-radius: 0px;
-	font-size: 12pt;
+	font-size: 16px;
 	padding: 10px 25px;
 }
 .sub-menu {
@@ -222,21 +223,32 @@ ul.sub-menu-list {
 .about-short {
 	background: $light-gray;
 	p {
-		font-size: 16pt;
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 50px;
 	}
 }
 .feature-post {
 	border-bottom:1px solid #252525;
+	h3 {
+		font-size: 35px;
+		color:$black;
+	}
+	p {
+		font-size: 23px;
+	}
 	.btn {
 		color: $orange;
 		font-family: 'Knowledge-Medium';
 		background: url("../images/arrow-right-org.png") right center no-repeat;
 		background-size: 15px;
 		padding: 0 20px 0 0px;
+		font-size: 17px;
 	}
 }
 .extra-content {
-	font-size: 12pt;
+	font-size: 17px;
 }
 .text-white {
 	.time {
@@ -269,6 +281,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 	h2 {
 		font-family: 'Knowledge-Bold';
+		font-size: 47px;
 	}
 }
 .mt {
@@ -283,10 +296,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	padding: 30px;
 	h3 {
 		color: $orange;
-		font-size: 14pt;
+		font-size: 18px;
 	}
 	p {
-		font-size: 18pt;
+		font-size: 22.5px;
 		line-height: 35px;
 		font-style: italic;
 		background: url("../images/comma.png") 0 0 no-repeat;
@@ -300,7 +313,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			margin-right: 15px;
 		}
 		h4 {
-			font-size: 13pt;
+			font-size: 18px;
 			line-height: 20px;
 			span {
 				font-family: 'Knowledge-Regular';
@@ -316,9 +329,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	small {
 		color: $orange;
 		font-family: 'Knowledge-Bold';
+		font-size: 15.5px;
 	}
 	h4 {
-		font-size: 23px;
+		font-size: 28px;
+		margin:10px 0  20px 0px;
 	}
 }
 /******************* End *******/
@@ -329,7 +344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	background-color: $light-gray;
 	color: $white;
 	h6 {
-		font-style: 13pt;
+		font-size: 13.5px;
 		margin-bottom: 25px;
 		font-family: 'Knowledge-Bold';
 	}
@@ -343,7 +358,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		}
 		a {
 			color: $white;
-			font-style: 12pt;
+			font-size: 14px;
+			font-family: 'Knowledge-Regular';
 		}
 	}
 }
@@ -359,7 +375,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .policy-links {
 	a {
 		margin-left: 20px;
-		font-size: 11pt;
+		font-size: 14px;
+		color: #cecece !important;
 	}
 }
 
