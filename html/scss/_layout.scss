@@ -146,9 +146,19 @@ ul.sub-menu-list {
 	h3 {
 		color: $white;
 		font-size: 50px;
+		br {
+			display: none;
+		}
+		@include breakpoint(mddesktop) {
+			font-size: 45px;
+			br {
+				display: block;
+			}
+		}
 	}
 	.head-title {
 		position: relative;
+		text-align: center;
 		&:hover {
 			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0+0,0.7+50,0+100 */
 			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -380,9 +390,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 }
 
-@include breakpoint(mobile) {
 
-}
 
 
 

@@ -7729,8 +7729,16 @@ ul.sub-menu-list {
   .app-header h3 {
     color: #fff;
     font-size: 50px; }
+    .app-header h3 br {
+      display: none; }
+    @media (max-width: 1399px) {
+      .app-header h3 {
+        font-size: 45px; }
+        .app-header h3 br {
+          display: block; } }
   .app-header .head-title {
-    position: relative; }
+    position: relative;
+    text-align: center; }
     .app-header .head-title:hover {
       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0+0,0.7+50,0+100 */
       background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
