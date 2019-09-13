@@ -10,7 +10,7 @@
         }
     }
     @else if $point==lgdesktop {
-        @media (max-width: 1699px) {
+        @media (max-width: 1599px) {
             @content ;
         }
     }

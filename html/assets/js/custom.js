@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
   //mobile menu
-  $(".menu-item-2, .menu-item-3").hover(function(){
+  $(".app-menu-list").hover(function(){
    $(".app-nav").toggleClass("hover-state");
   });
 

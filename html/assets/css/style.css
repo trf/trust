@@ -7624,7 +7624,7 @@ body {
   min-width: 445px;
   font-family: 'Knowledge-Light';
   font-size: 16px;
-  color: #000; }
+  color: #000000; }
 
 a, button {
   cursor: pointer;
@@ -7660,13 +7660,13 @@ h1, h2, h3, h4 {
   z-index: 9; }
 
 .app-nav.hover-state {
-  background-color: #fff; }
+  background-color: #ffffff; }
   .app-nav.hover-state ul.app-menu-list li a {
-    color: #000 !important; }
+    color: #000000 !important; }
   .app-nav.hover-state ul.app-menu-list li:hover a {
-    color: #fd7e14 !important; }
+    color: #ff9300 !important; }
   .app-nav.hover-state ul.app-menu-list li:hover li a {
-    color: #fff !important; }
+    color: #ffffff !important; }
   .app-nav.hover-state ul.app-menu-list li.has-subMenu a {
     background: url("../images/arrow-down-black.png") right center no-repeat;
     background-size: 15px;
@@ -7675,7 +7675,7 @@ h1, h2, h3, h4 {
     background: url("../images/arrow-down-orange.png") right center no-repeat;
     background-size: 15px; }
   .app-nav.hover-state ul.sub-menu-list li a {
-    color: #fff !important; }
+    color: #ffffff !important; }
 
 ul.app-menu-list {
   list-style: none;
@@ -7686,16 +7686,16 @@ ul.app-menu-list {
     display: inline-block;
     margin: 0 15px;
     padding: 35px 0px;
-    color: #fff; }
+    color: #ffffff; }
     ul.app-menu-list li a {
-      color: #fff !important;
+      color: #ffffff !important;
       font-size: 16px;
       font-family: 'Knowledge-Regular';
       display: block; }
     ul.app-menu-list li:hover a {
-      color: #fd7e14 !important; }
+      color: #ff9300 !important; }
     ul.app-menu-list li:hover .app-header {
-      background-color: #fff; }
+      background-color: #ffffff; }
     ul.app-menu-list li:hover .sub-menu {
       visibility: visible;
       opacity: 1; }
@@ -7710,13 +7710,13 @@ ul.sub-menu-list {
   padding: 0; }
   ul.sub-menu-list li {
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     margin: 0 10px;
     padding: 0; }
     ul.sub-menu-list li a {
       display: block;
-      color: #fff !important;
-      border: 1px solid #fff;
+      color: #ffffff !important;
+      border: 1px solid #ffffff;
       padding: 5px 15px;
       font-size: 12pt;
       text-align: center;
@@ -7724,15 +7724,16 @@ ul.sub-menu-list {
 
 .app-header {
   position: relative;
-  background: url("../images/home-img.jpg") center center no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto !important;
   width: 100%; }
   .app-header h3 {
-    color: #fff;
-    font-size: 50px; }
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 17px 0 0 0px; }
     .app-header h3 br {
       display: none; }
-    @media (max-width: 1399px) {
+    @media (max-width: 1599px) {
       .app-header h3 {
         font-size: 45px; }
         .app-header h3 br {
@@ -7745,23 +7746,34 @@ ul.sub-menu-list {
       background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); }
-    .app-header .head-title:before {
+    .app-header .head-title:nth-child(2):before {
       content: "";
       position: absolute;
       width: 1px;
       height: 70%;
-      left: -1px;
+      left: -0.5px;
       top: 18%;
+      z-index: 2;
       background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
       background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); }
-    .app-header .head-title:first-child:before {
-      display: none; }
+    .app-header .head-title:nth-child(2):after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 70%;
+      right: 0;
+      top: 18%;
+      z-index: 2;
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); }
 
 .btn-primary {
-  background-color: #fd7e14 !important;
-  border-color: #fd7e14 !important;
+  background-color: #ff9300 !important;
+  border-color: #ff9300 !important;
   border-radius: 0px;
   font-size: 16px;
   padding: 10px 25px; }
@@ -7792,8 +7804,8 @@ ul.sub-menu-list {
   z-index: 2;
   text-align: center; }
   .page-down .button {
-    width: 35px;
-    height: 35px;
+    width: 47px;
+    height: 47px;
     background: url("../images/icon-page-down.png") 0 0 no-repeat;
     background-size: 100%;
     border: none;
@@ -7815,11 +7827,11 @@ ul.sub-menu-list {
   border-bottom: 1px solid #252525; }
   .feature-post h3 {
     font-size: 35px;
-    color: #000; }
+    color: #000000; }
   .feature-post p {
     font-size: 23px; }
   .feature-post .btn {
-    color: #fd7e14;
+    color: #ff9300;
     font-family: 'Knowledge-Medium';
     background: url("../images/arrow-right-org.png") right center no-repeat;
     background-size: 15px;
@@ -7869,7 +7881,7 @@ ul.sub-menu-list {
   border: 1px solid #252525;
   padding: 30px; }
   .testimonial-description h3 {
-    color: #fd7e14;
+    color: #ff9300;
     font-size: 18px; }
   .testimonial-description p {
     font-size: 22.5px;
@@ -7893,7 +7905,7 @@ ul.sub-menu-list {
   border: 1px solid #555555;
   display: block; }
   .article small {
-    color: #fd7e14;
+    color: #ff9300;
     font-family: 'Knowledge-Bold';
     font-size: 15.5px; }
   .article h4 {
@@ -7905,7 +7917,7 @@ ul.sub-menu-list {
 .app-footer {
   margin-top: 40px;
   background-color: #555555;
-  color: #fff; }
+  color: #ffffff; }
   .app-footer h6 {
     font-size: 13.5px;
     margin-bottom: 25px;
@@ -7918,7 +7930,7 @@ ul.sub-menu-list {
       margin: 0 0 10px 0px;
       padding: 0; }
     .app-footer ul.footer-nav a {
-      color: #fff;
+      color: #ffffff;
       font-size: 14px;
       font-family: 'Knowledge-Regular'; }
 
