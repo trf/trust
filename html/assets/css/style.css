@@ -7726,6 +7726,9 @@ ul.sub-menu-list {
   position: relative;
   background-size: 100% auto !important;
   width: 100%; }
+  @media (max-width: 1199px) {
+    .app-header {
+      background-size: cover !important; } }
   .app-header h3 {
     color: #ffffff;
     font-size: 50px;
@@ -7738,6 +7741,10 @@ ul.sub-menu-list {
         font-size: 45px; }
         .app-header h3 br {
           display: block; } }
+    @media (max-width: 1199px) {
+      .app-header h3 {
+        font-size: 35px;
+        line-height: 35px; } }
   .app-header .head-title {
     position: relative;
     text-align: center; }
@@ -7820,14 +7827,25 @@ ul.sub-menu-list {
   background: #555555; }
   .about-short p {
     font-size: 30px; }
+    @media (max-width: 1199px) {
+      .about-short p {
+        font-size: 20px; }
+        .about-short p br {
+          display: none; } }
   .about-short h2 {
     font-size: 50px; }
+    @media (max-width: 1199px) {
+      .about-short h2 {
+        font-size: 40px; } }
 
 .feature-post {
   border-bottom: 1px solid #252525; }
   .feature-post h3 {
     font-size: 35px;
     color: #000000; }
+    @media (max-width: 1199px) {
+      .feature-post h3 {
+        font-size: 26px; } }
   .feature-post p {
     font-size: 23px; }
   .feature-post .btn {
@@ -7869,6 +7887,9 @@ ul.sub-menu-list {
   .testimonial-title h2 {
     font-family: 'Knowledge-Bold';
     font-size: 47px; }
+    @media (max-width: 1199px) {
+      .testimonial-title h2 {
+        font-size: 37px; } }
 
 .mt {
   margin-top: 30px; }
@@ -7911,6 +7932,9 @@ ul.sub-menu-list {
   .article h4 {
     font-size: 28px;
     margin: 10px 0  20px 0px; }
+    @media (max-width: 1199px) {
+      .article h4 {
+        font-size: 26px; } }
 
 /******************* End *******/
 /******************* Footer start *******/
