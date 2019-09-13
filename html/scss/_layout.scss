@@ -337,6 +337,9 @@ ul.sub-menu-list {
 	min-height:400px;
 	border:1px solid #252525;
 	padding: 30px;
+	@include breakpoint(desktop) {
+		padding: 20px;
+	}
 	h3 {
 		color: $orange;
 		font-size: 18px;
