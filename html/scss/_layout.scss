@@ -102,15 +102,15 @@ ul.app-menu-list {
 			color: $orange !important;
 		}
 		&:hover .app-header   {
-			background-color:$white; 
+			background-color: $white; 
 		}
 		&:hover .sub-menu {
 			visibility: visible;
 			opacity: 1;
 		}
 	}
-	li.has-subMenu {
-		a {
+	li.has-subMenu > {
+		 a {
 			background: url("../images/arrow-down-white.png") right center no-repeat;
 			background-size: 15px;
 			padding-right: 22px;
@@ -131,7 +131,7 @@ ul.sub-menu-list {
 			display: block;
 			color: $white !important;
 			border:1px solid $white;
-			padding:5px 15px;
+			padding:5px 15px !important;
 			font-size: 12pt;
 			text-align: center;
 			background: none !important;
@@ -163,6 +163,10 @@ ul.sub-menu-list {
 		@include breakpoint(desktop) {
 			font-size: 35px;
 			line-height: 35px;
+		}
+		@include breakpoint(mediummobile) {
+			font-size: 22px;
+			line-height: 26px;
 		}
 	}
 	.head-title {
@@ -264,6 +268,9 @@ ul.sub-menu-list {
 		font-size: 50px;
 		@include breakpoint(desktop) {
 			font-size: 40px;
+		}
+		@include breakpoint(mobile) {
+			font-size: 26px;
 		}
 	}
 }

@@ -7699,7 +7699,7 @@ ul.app-menu-list {
     ul.app-menu-list li:hover .sub-menu {
       visibility: visible;
       opacity: 1; }
-  ul.app-menu-list li.has-subMenu a {
+  ul.app-menu-list li.has-subMenu > a {
     background: url("../images/arrow-down-white.png") right center no-repeat;
     background-size: 15px;
     padding-right: 22px; }
@@ -7717,7 +7717,7 @@ ul.sub-menu-list {
       display: block;
       color: #ffffff !important;
       border: 1px solid #ffffff;
-      padding: 5px 15px;
+      padding: 5px 15px !important;
       font-size: 12pt;
       text-align: center;
       background: none !important; }
@@ -7745,6 +7745,10 @@ ul.sub-menu-list {
       .app-header h3 {
         font-size: 35px;
         line-height: 35px; } }
+    @media (max-width: 639px) {
+      .app-header h3 {
+        font-size: 22px;
+        line-height: 26px; } }
   .app-header .head-title {
     position: relative;
     text-align: center; }
@@ -7837,6 +7841,9 @@ ul.sub-menu-list {
     @media (max-width: 1199px) {
       .about-short h2 {
         font-size: 40px; } }
+    @media (max-width: 767px) {
+      .about-short h2 {
+        font-size: 26px; } }
 
 .feature-post {
   border-bottom: 1px solid #252525; }
