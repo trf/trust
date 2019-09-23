@@ -419,8 +419,8 @@ ul.sub-menu-list {
 	.container {
 		max-width: 1400px;
 		padding-left: 80px;
-		@include breakpoint(mobile) {
-			padding-left: 15px;
+		@include breakpoint(desktop) {
+			padding-left: 50px;
 		}
 	}
 	margin-top: 40px;

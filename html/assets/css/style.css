@@ -7971,9 +7971,9 @@ ul.sub-menu-list {
   .app-footer .container {
     max-width: 1400px;
     padding-left: 80px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       .app-footer .container {
-        padding-left: 15px; } }
+        padding-left: 50px; } }
   .app-footer h6 {
     font-size: 13.5px;
     margin-bottom: 25px;
