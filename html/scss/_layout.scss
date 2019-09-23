@@ -261,6 +261,9 @@ ul.sub-menu-list {
 		margin-bottom: 30px;
 		@include breakpoint(desktop) {
 			font-size: 20px;
+
+		}
+		@include breakpoint(smdesktop) {
 			br {
 				display:none;
 			}
@@ -276,6 +279,7 @@ ul.sub-menu-list {
 			font-size: 26px;
 		}
 	}
+
 }
 .feature-post {
 	border-bottom:1px solid #252525;
@@ -340,6 +344,7 @@ ul.sub-menu-list {
 		max-width: 690px;
 		font-family: 'Knowledge-Bold';
 		font-size: 47px;
+		line-height: 50px;
 		@include breakpoint(desktop) {
 			font-size: 37px;
 		}
@@ -369,6 +374,10 @@ ul.sub-menu-list {
 		background: url("../images/comma.png") 0 0 no-repeat;
 		background-size: 15px;
 		padding-top: 30px;
+		@include breakpoint(smdesktop) {
+			br {display: none;}
+		}
+
 	}
 .person {
 		img {
@@ -397,6 +406,7 @@ ul.sub-menu-list {
 	h4 {
 		font-size: 28px;
 		margin:10px 0  20px 0px;
+		min-height: 100px;
 		@include breakpoint(desktop) {
 			font-size: 26px;
 		}
@@ -406,6 +416,13 @@ ul.sub-menu-list {
 
 /******************* Footer start *******/
 .app-footer {
+	.container {
+		max-width: 1400px;
+		padding-left: 80px;
+		@include breakpoint(mobile) {
+			padding-left: 15px;
+		}
+	}
 	margin-top: 40px;
 	background-color: $light-gray;
 	color: $white;
