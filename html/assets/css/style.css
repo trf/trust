@@ -7830,14 +7830,17 @@ ul.sub-menu-list {
 .about-short {
   background: #555555; }
   .about-short p {
-    font-size: 30px; }
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px; }
     @media (max-width: 1199px) {
       .about-short p {
         font-size: 20px; }
         .about-short p br {
           display: none; } }
   .about-short h2 {
-    font-size: 50px; }
+    font-size: 50px;
+    margin-bottom: 10px; }
     @media (max-width: 1199px) {
       .about-short h2 {
         font-size: 40px; } }
@@ -7847,14 +7850,19 @@ ul.sub-menu-list {
 
 .feature-post {
   border-bottom: 1px solid #252525; }
+  .feature-post .content {
+    max-width: 800px; }
   .feature-post h3 {
     font-size: 35px;
-    color: #000000; }
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 15px; }
     @media (max-width: 1199px) {
       .feature-post h3 {
         font-size: 26px; } }
   .feature-post p {
-    font-size: 23px; }
+    font-size: 23px;
+    line-height: 30px; }
   .feature-post .btn {
     color: #ff9300;
     font-family: 'Knowledge-Medium';
@@ -7879,7 +7887,8 @@ ul.sub-menu-list {
 .testimonial-title {
   position: relative;
   min-height: 400px;
-  height: 100%; }
+  height: 100%;
+  background-size: cover; }
   .testimonial-title .content {
     position: absolute;
     bottom: 0;
@@ -7892,6 +7901,7 @@ ul.sub-menu-list {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 45%, rgba(0, 0, 0, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 ); }
   .testimonial-title h2 {
+    max-width: 690px;
     font-family: 'Knowledge-Bold';
     font-size: 47px; }
     @media (max-width: 1199px) {
