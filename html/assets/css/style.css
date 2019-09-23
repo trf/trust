@@ -7871,6 +7871,8 @@ ul.sub-menu-list {
     background-size: 15px;
     padding: 0 20px 0 0px;
     font-size: 17px; }
+  .feature-post img {
+    height: 100%; }
 
 .extra-content {
   font-size: 17px; }
@@ -7958,6 +7960,9 @@ ul.sub-menu-list {
     font-size: 28px;
     margin: 10px 0  20px 0px;
     min-height: 100px; }
+    @media (max-width: 1199px) {
+      .article h4 {
+        min-height: inherit; } }
     @media (max-width: 1199px) {
       .article h4 {
         font-size: 26px; } }

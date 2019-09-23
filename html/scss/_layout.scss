@@ -307,6 +307,9 @@ ul.sub-menu-list {
 		padding: 0 20px 0 0px;
 		font-size: 17px;
 	}
+	img {
+		height: 100%;
+	}
 }
 .extra-content {
 	font-size: 17px;
@@ -407,6 +410,9 @@ ul.sub-menu-list {
 		font-size: 28px;
 		margin:10px 0  20px 0px;
 		min-height: 100px;
+		@include breakpoint(desktop) {
+			min-height: inherit;
+		}
 		@include breakpoint(desktop) {
 			font-size: 26px;
 		}
