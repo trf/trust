@@ -7873,6 +7873,7 @@ ul.sub-menu-list {
     font-size: 17px; }
   .feature-post img {
     height: 100%;
+    max-height: 350px;
     object-fit: cover; }
 
 .extra-content {
