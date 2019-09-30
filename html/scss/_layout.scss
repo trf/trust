@@ -283,9 +283,7 @@ ul.sub-menu-list {
 }
 .feature-post {
 	border-bottom:1px solid #252525;
-	.content {
-		max-width: 800px;
-	}
+
 	h3 {
 		font-size: 35px;
 		line-height: 38px;
@@ -363,7 +361,7 @@ ul.sub-menu-list {
 }
 .testimonial-description {
 	min-height:400px;
-	border:1px solid #252525;
+	border:1px solid #999999;
 	padding: 30px;
 	@include breakpoint(desktop) {
 		padding: 20px;
@@ -401,7 +399,7 @@ ul.sub-menu-list {
 .article {
 	min-height:300px;
 	height: 100%;
-	border:1px solid #555555;
+	border:1px solid #999999;
 	display:block;
 	small {
 		color: $orange;
