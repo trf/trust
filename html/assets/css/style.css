@@ -7851,6 +7851,7 @@ ul.sub-menu-list {
 /******************* End ***********************/
 /******************* Home sections start *******/
 .about-short {
+  padding: 80px 0px;
   background: #555555; }
   .about-short p {
     font-size: 30px;
@@ -7864,7 +7865,7 @@ ul.sub-menu-list {
         display: none; } }
   .about-short h2 {
     font-size: 50px;
-    margin: 5px 0 10px 0; }
+    margin: 0px 0 10px 0; }
     @media (max-width: 1199px) {
       .about-short h2 {
         font-size: 40px; } }
@@ -7873,7 +7874,7 @@ ul.sub-menu-list {
         font-size: 26px; } }
 
 .feature-post {
-  border-bottom: 1px solid #252525; }
+  border-bottom: 1px solid #999999; }
   .feature-post h3 {
     font-size: 35px;
     line-height: 38px;
@@ -7916,7 +7917,7 @@ ul.sub-menu-list {
 
 .testimonial-title {
   position: relative;
-  min-height: 400px;
+  min-height: 550px;
   height: 100%;
   background-size: cover; }
   .testimonial-title .content {
@@ -7940,22 +7941,23 @@ ul.sub-menu-list {
         font-size: 37px; } }
 
 .testimonial-description {
-  min-height: 400px;
+  height: 100%;
   border: 1px solid #999999;
-  padding: 30px; }
+  padding: 35px 30px; }
   @media (max-width: 1199px) {
     .testimonial-description {
       padding: 20px; } }
   .testimonial-description h3 {
     color: #ff9300;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 30px; }
   .testimonial-description p {
     font-size: 22.5px;
-    line-height: 35px;
+    line-height: 40px;
     font-style: italic;
     background: url("../images/comma.png") 0 0 no-repeat;
     background-size: 20px;
-    padding-top: 30px; }
+    padding-top: 40px; }
     @media (max-width: 1299px) {
       .testimonial-description p br {
         display: none; } }
