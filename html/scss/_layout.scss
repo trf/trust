@@ -37,12 +37,7 @@ h1,h2,h3,h4 {font-family: 'Knowledge-bold';}
 .container {
 	max-width: 1600px;
 }
-.mt {
-	margin-top: 30px;
-}
-.mb {
-	margin-bottom: 30px;
-}
+
 @media (min-width: 1400px) {
 	.row {
 		margin-right: -20px;
@@ -52,11 +47,17 @@ h1,h2,h3,h4 {font-family: 'Knowledge-bold';}
 		padding-right: 20px;
 		padding-left: 20px;
 	}
-	.mt {
-		margin-top: 40px;
+}
+.mt {
+	margin-top: 40px;
+	@include breakpoint(mddesktop) {
+		margin-top: 30px;
 	}
-	.mb {
-		margin-bottom: 40px;
+}
+.mb {
+	margin-bottom: 40px;
+	@include breakpoint(mddesktop) {
+		margin-top: 30px;
 	}
 }
 .main-menu {
@@ -309,7 +310,6 @@ ul.sub-menu-list {
 }
 .feature-post {
 	border-bottom:1px solid #252525;
-
 	h3 {
 		font-size: 35px;
 		line-height: 38px;
@@ -338,6 +338,9 @@ ul.sub-menu-list {
 		max-height:330px;
 		object-fit: cover;
 	}
+}
+.content {
+	padding: 40px 0px 30px 0px;
 }
 .extra-content {
 	font-size: 17px;
