@@ -7671,6 +7671,10 @@ h1, h2, h3, h4 {
     .space-x {
       padding-left: 30px;
       padding-right: 30px; } }
+  @media (max-width: 479px) {
+    .space-x {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .main-menu {
   position: relative;
@@ -7680,6 +7684,9 @@ h1, h2, h3, h4 {
   min-height: 100px; }
 .app-nav .logo {
   max-width: 255px; }
+  @media (max-width: 1299px) {
+    .app-nav .logo {
+      max-width: 220px; } }
 
 .position-relative .app-nav {
   position: absolute;
@@ -7753,6 +7760,20 @@ ul.sub-menu-list {
       text-align: center;
       background: none !important; }
 
+.btn-mobileMenu {
+  width: 45px;
+  height: 40px;
+  margin-left: auto;
+  display: flex;
+  border: 0;
+  background-color: transparent; }
+  .btn-mobileMenu span {
+    height: 3px;
+    background-color: #ffffff;
+    display: block; }
+    .btn-mobileMenu span:nth-child(2) {
+      margin: 8px 10px 8px 0px; }
+
 .app-header {
   position: relative;
   background-size: cover !important;
@@ -7813,9 +7834,32 @@ ul.sub-menu-list {
       background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0.5) 51%, rgba(255, 255, 255, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); }
+    @media (max-width: 767px) {
+      .app-header .head-title {
+        display: none !important; } }
   .app-header .faded-text {
     background: url("../images/faded-text.png") center center no-repeat;
     background-size: 92%; }
+    @media (max-width: 767px) {
+      .app-header .faded-text {
+        background: none; } }
+
+.head-title-mob {
+  padding-bottom: 100px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,000000+100&0+0,0.4+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 );
+  /* IE6-9 */ }
+  @media (max-width: 767px) {
+    .head-title-mob h3 {
+      width: 100%;
+      font-size: 75px;
+      line-height: 80px; } }
 
 .btn-primary {
   background-color: #ff9300 !important;
@@ -7865,6 +7909,9 @@ ul.sub-menu-list {
 .about-short {
   padding: 80px 0px;
   background: #555555; }
+  @media (max-width: 767px) {
+    .about-short {
+      padding: 40px 0px; } }
   .about-short p {
     font-size: 30px;
     line-height: 35px;
@@ -7872,6 +7919,9 @@ ul.sub-menu-list {
     @media (max-width: 1199px) {
       .about-short p {
         font-size: 20px; } }
+    @media (max-width: 767px) {
+      .about-short p {
+        font-size: 27px; } }
     @media (max-width: 1299px) {
       .about-short p br {
         display: none; } }
@@ -7883,7 +7933,7 @@ ul.sub-menu-list {
         font-size: 40px; } }
     @media (max-width: 767px) {
       .about-short h2 {
-        font-size: 26px; } }
+        display: none; } }
 
 .feature-post {
   border-bottom: 1px solid #999999; }
@@ -8018,10 +8068,18 @@ ul.sub-menu-list {
     @media (max-width: 1199px) {
       .app-footer .container {
         padding-left: 50px; } }
+    @media (max-width: 767px) {
+      .app-footer .container {
+        padding: 0; } }
   .app-footer h6 {
     font-size: 13.5px;
     margin-bottom: 25px;
     font-family: 'Knowledge-Bold'; }
+    @media (max-width: 767px) {
+      .app-footer h6 {
+        padding: 25px 30px;
+        margin: 0;
+        border-top: 1px solid #717171; } }
   .app-footer ul.footer-nav {
     list-style: none;
     margin: 0 0 30px 0px;
@@ -8036,6 +8094,9 @@ ul.sub-menu-list {
       color: #ffffff;
       font-size: 14px;
       font-family: 'Knowledge-Regular'; }
+    @media (max-width: 767px) {
+      .app-footer ul.footer-nav {
+        display: none; } }
 
 .copyright {
   background-color: #262626;
