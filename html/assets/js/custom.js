@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
       //Smooth scroll
-      $('.page-down .button').on('click',function (e) {
+      $('.page-down .button, .policy-links').on('click',function (e) {
         e.preventDefault();
         var target = this.hash;
         $target = $(target);
@@ -20,6 +20,9 @@ $(document).ready(function(){
   $(".app-footer h6").click(function(){
     $(this).parent(".app-footer").siblings().find("nav").removeClass("show");
     $(this).parent("nav").toggleClass("show");
+   });
+   $(".footer-logo").click(function(){
+    $(".policy-links").toggleClass("show");
    });
 });
 

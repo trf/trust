@@ -382,7 +382,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		color:$black;
 		margin-bottom: 15px;
 		@include breakpoint(desktop) {
-			font-size: 26px;
+			font-size: 30px;
+		}
+		br {
+			@include breakpoint(mobile) {
+				display: none;
+			}
 		}
 	}
 	p {
@@ -410,6 +415,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	@include breakpoint(desktop) {
 		padding-bottom: 0;
 	}
+	@include breakpoint(mobile) {
+		padding-top: 20px;
+	}
 }
 }
 .extra-content {
@@ -429,12 +437,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 .testimonial-title {
 	position: relative;
-	min-height:550px;
-	@include breakpoint(mobile) {
-		min-height:400px;
-	}
 	height:100%;
-	background-size: cover;
+	.img {
+		min-height:550px;
+		background-size: cover;
+		@include breakpoint(mobile) {
+			min-height:330px;
+		}
+	}
 	.content {
 		position: absolute;
 		bottom: 0;
@@ -442,10 +452,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		right: 0;
 		z-index: 1;
 		padding: 30px;
+		color: $white;
 		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(168, 64, 64, 0.185) 45%, rgba(0,0,0,0.9) 100%);
 		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 45%,rgba(0,0,0,0.9) 100%);
 		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 45%,rgba(0,0,0,0.9) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 );
+		@include breakpoint(mobile) {
+			position: static;
+			bottom: inherit;
+			left: inherit;
+			right: inherit;
+			background:transparent;
+			color: $black;
+			padding:15px 30px;
+		}
 	}
 	h2 {
 		max-width: 690px;
@@ -454,6 +474,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		line-height: 50px;
 		@include breakpoint(desktop) {
 			font-size: 37px;
+		}
+		@include breakpoint(mobile) {
+			font-size: 30px;
+			line-height: 38px;
 		}
 	}
 }
@@ -483,12 +507,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		padding-top: 40px;
 		min-height: 315px;
 		@include breakpoint(smdesktop) {
+			min-height:inherit;
 			br {display: none;}
 		}
-		@include breakpoint(mobile) {
-			min-height:inherit;
-		}
-
 	}
 .person {
 		img {
@@ -522,9 +543,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		min-height: 100px;
 		@include breakpoint(desktop) {
 			min-height: inherit;
-		}
-		@include breakpoint(desktop) {
 			font-size: 26px;
+		}
+		@include breakpoint(mobile) {
+			font-size: 30px;
 		}
 	}
 	.content {
@@ -533,9 +555,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		padding: 35px 30px 30px 30px;
 		@include breakpoint(mobile) {
 			border:0;
-			padding-left:0;
-			padding-right:0;
-			padding-bottom: 0;
+			padding: 30px 0px 0px 0px;
 		}
 	}
 }
@@ -641,9 +661,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		margin-left: 20px;
 		font-size: 14px;
 		color: #cecece !important;
+		@include breakpoint(mobile) {
+			display: block;
+			padding: 15px 0;
+			margin-left: 30px;
+			margin-right: -30px;
+			border-top: 1px solid #717171;
+			&:first-child {
+				margin-top: 15px;
+			}
+		}
 	}
 	@include breakpoint(mobile) {
 		display: none;
+		text-align: left;
+		&.show {
+			display: block;
+		}
 	}
 }
 
