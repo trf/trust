@@ -7761,11 +7761,12 @@ ul.sub-menu-list {
       background: none !important; }
 
 .btn-mobileMenu {
-  width: 45px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-left: auto;
   display: flex;
   border: 0;
+  padding: 0;
   background-color: transparent; }
   .btn-mobileMenu span {
     height: 3px;
@@ -8103,11 +8104,13 @@ ul.sub-menu-list {
     font-family: 'Knowledge-Bold'; }
     @media (max-width: 767px) {
       .app-footer h6 {
-        padding: 25px 30px;
+        padding: 25px 30px 25px 25px;
         margin: 0;
         background: url("../images/footer-nav-arrow.png") right center no-repeat;
         background-size: auto 9px;
-        border-top: 1px solid #717171; } }
+        border-top: 1px solid #717171;
+        border-left: 5px solid transparent;
+        cursor: pointer; } }
   .app-footer ul.footer-nav {
     list-style: none;
     margin: 0 0 30px 0px;

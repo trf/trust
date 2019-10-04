@@ -180,11 +180,12 @@ ul.sub-menu-list {
 	}
 }
 .btn-mobileMenu {
-	width: 45px;
-	height:40px;
+	width: 30px;
+	height:30px;
 	margin-left: auto;
 	display: flex;
 	border:0;
+	padding: 0;
 	background-color: transparent;
 	span {
 		height:3px;
@@ -561,11 +562,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		margin-bottom: 25px;
 		font-family: 'Knowledge-Bold';
 		@include breakpoint(mobile) {
-			padding:25px 30px;
+			padding:25px 30px 25px 25px;
 			margin: 0;
 			background: url("../images/footer-nav-arrow.png") right center no-repeat;
 			background-size:auto 9px;
 			border-top: 1px solid #717171;
+			border-left:5px solid transparent;
+			cursor: pointer;
 		}
 	}
 	ul.footer-nav {

@@ -16,8 +16,11 @@ $(document).ready(function(){
   $(".app-menu-list").hover(function(){
    $(".app-nav").toggleClass("hover-state");
   });
-
-
+  //mobile footer menu
+  $(".app-footer h6").click(function(){
+    $(this).parent(".app-footer").siblings().find("nav").removeClass("show");
+    $(this).parent("nav").toggleClass("show");
+   });
 });
 
 // $(function(){
