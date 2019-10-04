@@ -215,17 +215,13 @@ ul.sub-menu-list {
 				display: block;
 			}
 		}
-		@include breakpoint(lgdesktop) {
-			font-size: 38px;
+		@include breakpoint(mddesktop) {
+			font-size: 45px;
 		}
-		@include breakpoint(desktop) {
-			font-size: 35px;
-			line-height: 35px;
+		@include breakpoint(mobile) {
+			font-size: 75px;
 		}
-		@include breakpoint(mediummobile) {
-			font-size: 22px;
-			line-height: 26px;
-		}
+
 	}
 	.head-title {
 		position: relative;
@@ -362,8 +358,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	h2 {
 		font-size: 50px;
 		margin: 0px 0 10px 0;
-		@include breakpoint(desktop) {
-			font-size: 40px;
+		@include breakpoint(mddesktop) {
+			font-size: 45px;
 		}
 		@include breakpoint(mobile) {
 			display: none;
@@ -382,7 +378,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		color:$black;
 		margin-bottom: 15px;
 		@include breakpoint(desktop) {
-			font-size: 30px;
+			font-size: 31px;
 		}
 		br {
 			@include breakpoint(mobile) {
@@ -476,7 +472,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			font-size: 37px;
 		}
 		@include breakpoint(mobile) {
-			font-size: 30px;
+			font-size: 31px;
 			line-height: 38px;
 		}
 	}
@@ -546,7 +542,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			font-size: 26px;
 		}
 		@include breakpoint(mobile) {
-			font-size: 30px;
+			font-size: 31px;
 		}
 	}
 	.content {
