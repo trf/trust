@@ -288,7 +288,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			line-height: 80px;
 		}
 	}
-
 }
 .btn-primary {
 	background-color: $orange !important;
@@ -340,7 +339,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .about-short {
 	padding: 80px 0px;
 	@include breakpoint(mobile) {
-		padding: 40px 0px;
+		padding: 50px 0px;
 	}
 	background: $light-gray;
 	p {
@@ -373,6 +372,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 .feature-post {
 	border-bottom:1px solid #999999;
+	@include breakpoint(desktop) {
+		border: 0;
+	}
 	h3 {
 		font-size: 35px;
 		line-height: 38px;
@@ -404,6 +406,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .content {
 	padding: 40px 0px 30px 0px;
+	@include breakpoint(desktop) {
+		padding-bottom: 0;
+	}
 }
 }
 .extra-content {
@@ -424,6 +429,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .testimonial-title {
 	position: relative;
 	min-height:550px;
+	@include breakpoint(mobile) {
+		min-height:400px;
+	}
 	height:100%;
 	background-size: cover;
 	.content {
@@ -455,6 +463,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	@include breakpoint(desktop) {
 		padding: 20px;
 	}
+	@include breakpoint(mobile) {
+		margin: -15px -15px 0 -15px;
+		height: auto;
+		padding:35px 15px 35px 15px;
+	}
 	h3 {
 		color: $orange;
 		font-size: 18px;
@@ -471,6 +484,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		@include breakpoint(smdesktop) {
 			br {display: none;}
 		}
+		@include breakpoint(mobile) {
+			min-height:inherit;
+		}
 
 	}
 .person {
@@ -484,6 +500,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			span {
 				font-family: 'Knowledge-Regular';
 			}
+		}
+		@include breakpoint(mobile) {
+			justify-content: end;
 		}
 	}
 }
@@ -511,8 +530,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		border:1px solid #999999;
 		border-top: 0px;
 		padding: 35px 30px 30px 30px;
+		@include breakpoint(mobile) {
+			border:0;
+			padding-left:0;
+			padding-right:0;
+			padding-bottom: 0;
+		}
 	}
 }
+
 /******************* End *******/
 
 /******************* Footer start *******/
@@ -537,6 +563,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		@include breakpoint(mobile) {
 			padding:25px 30px;
 			margin: 0;
+			background: url("../images/footer-nav-arrow.png") right center no-repeat;
+			background-size:auto 9px;
 			border-top: 1px solid #717171;
 		}
 	}
@@ -560,6 +588,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			display: none;
 		}
 	}
+	@include breakpoint(mobile) {
+		background-color: #4d4d4d;
+		.show {
+			ul.footer-nav {
+				display: block;
+				border-top: 1px solid #717171;
+				padding-left: 60px;
+				li {
+					margin: 0;					
+					border-top: 1px solid #717171;
+					&:first-child {
+						border: 0;
+					}
+				}
+				a {
+					padding: 15px 0;
+					display: block;
+				}
+			}
+			h6 {
+				border-left:5px solid $orange;
+				background: url("../images/footer-nav-arrow-down.png") right center no-repeat;
+				background-size:auto 9px;
+			}
+		}
+	}
+		
 }
 .copyright {
 	background-color: $dark-gray;
@@ -569,8 +624,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	img {
 		max-width: 220px;
 		@include breakpoint(tablet) {
-			max-width: 160px;
+			max-width: 180px;
 		}
+	}
+	@include breakpoint(mobile) {
+		background: url("../images/footer-nav-arrow-org.png") right center no-repeat;
+		background-size:auto 9px;
 	}
 }
 .policy-links {
@@ -579,9 +638,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		margin-left: 20px;
 		font-size: 14px;
 		color: #cecece !important;
-		@include breakpoint(mobile) {
-			margin:0;
-			display: block;
-		}
 	}
+	@include breakpoint(mobile) {
+		display: none;
+	}
+}
+
+@include breakpoint(mobile) {
+	.feature-post .img, .testimonial-title, .articles .img {margin-left:-30px; margin-right:-30px;}
 }
