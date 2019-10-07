@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
 
 
-  //mobile menu
+  //menu hover
   $(".app-menu-list").hover(function(){
    $(".app-nav").toggleClass("hover-state");
   });
@@ -23,6 +23,20 @@ $(document).ready(function(){
    });
    $(".footer-logo").click(function(){
     $(".policy-links").toggleClass("show");
+   });
+   $(".btn-mobileMenu").click(function(){
+    $("body").addClass("translate-x");
+   });
+   $(".offCanvas-nav button").click(function(){
+    $("body").removeClass("translate-x");
+
+    setTimeout(function(){
+    $(".has-subMenu a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
+  }, 1000);
+
+   });
+   $(".has-subMenu a").click(function(){
+    $(this).toggleClass("active").next(".level-1").toggleClass("show");
    });
 });
 
