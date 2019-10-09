@@ -7847,6 +7847,10 @@ ul.sub-menu-list {
     margin: 0;
     background: url("../images/faded-text.png") 50px center no-repeat;
     background-size: calc(100% - 100px) auto; }
+    @media (max-width: 1399px) {
+      .app-header .faded-text {
+        background: url("../images/faded-text.png") 30px center no-repeat;
+        background-size: calc(100% - 60px) auto; } }
     @media (max-width: 767px) {
       .app-header .faded-text {
         background: none; } }
@@ -7918,7 +7922,7 @@ ul.sub-menu-list {
   background: #555555; }
   @media (max-width: 767px) {
     .about-short {
-      padding: 50px 0px; } }
+      padding: 50px 0px 60px 0px; } }
   .about-short p {
     font-size: 30px;
     line-height: 35px;
@@ -7995,11 +7999,11 @@ ul.sub-menu-list {
 
 .text-white .time {
   background: url("../images/icon-time-white.png") 0 center no-repeat;
-  background-size: 16px; }
+  background-size: 18px; }
   @media (max-width: 767px) {
     .text-white .time {
       background: url("../images/icon-time.png") 0 center no-repeat;
-      background-size: 16px; } }
+      background-size: 18px; } }
 
 .time {
   background: url("../images/icon-time.png") 0 center no-repeat;
@@ -8017,7 +8021,7 @@ ul.sub-menu-list {
     min-height: 550px;
     height: 100%;
     background-size: cover; }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .testimonial-title .img {
         min-height: 380px; } }
   .testimonial-title .content {
@@ -8127,16 +8131,21 @@ ul.sub-menu-list {
     padding: 35px 30px 60px 30px; }
     @media (max-width: 767px) {
       .article .content {
-        border: 0;
         padding: 30px 0px 0px 0px; } }
   .article .extra-content {
-    padding: 0 15px 30px 15px;
+    padding: 0 30px 30px 30px;
     margin: 0;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%; }
+    @media (max-width: 767px) {
+      .article .extra-content {
+        position: static; } }
+  @media (max-width: 767px) {
+    .article {
+      border: 0; } }
 
 /******************* End *******/
 /******************* Footer start *******/
@@ -8151,6 +8160,9 @@ ul.sub-menu-list {
     @media (max-width: 1199px) {
       .app-footer .container {
         padding-left: 50px; } }
+    @media (max-width: 991px) {
+      .app-footer .container {
+        padding-left: 30px; } }
     @media (max-width: 767px) {
       .app-footer .container {
         padding: 0; } }
@@ -8237,6 +8249,8 @@ ul.sub-menu-list {
         font-family: 'Knowledge-Regular'; }
         .policy-links a:first-child {
           margin-top: 15px; } }
+    .policy-links a:first-child {
+      margin-left: 0px; }
     .policy-links a:last-child {
       padding-bottom: 2px; }
   @media (max-width: 767px) {

@@ -276,6 +276,10 @@ ul.sub-menu-list {
 		margin: 0;
 		background: url("../images/faded-text.png") 50px center no-repeat;
 		background-size: calc(100% - 100px) auto;
+		@include breakpoint(mddesktop) {
+			background: url("../images/faded-text.png") 30px center no-repeat;
+			background-size: calc(100% - 60px) auto;
+		}
 		@include breakpoint(mobile) {
 			background: none;
 		}
@@ -347,7 +351,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .about-short {
 	padding: 80px 0px 90px 0px;
 	@include breakpoint(mobile) {
-		padding: 50px 0px;
+		padding: 50px 0px 60px 0px;
 	}
 	background: $light-gray;
 	p {
@@ -446,10 +450,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .text-white {
 	.time {
 		background: url("../images/icon-time-white.png") 0 center no-repeat;
-		background-size: 16px;
+		background-size: 18px;
 		@include breakpoint(mobile) {
 			background: url("../images/icon-time.png") 0 center no-repeat;
-			background-size: 16px;
+			background-size: 18px;
 		}
 	}
 }
@@ -469,7 +473,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		min-height:550px;
 		height: 100%;
 		background-size: cover;
-		@include breakpoint(mobile) {
+		@include breakpoint(tablet) {
 			min-height:380px;
 		}
 	}
@@ -590,18 +594,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	.content {
 		padding: 35px 30px 60px 30px;
 		@include breakpoint(mobile) {
-			border:0;
 			padding: 30px 0px 0px 0px;
 		}
 	}
 	.extra-content {
-		padding: 0 15px 30px 15px;
+		padding: 0 30px 30px 30px;
 		margin:0;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		width: 100%;
+		@include breakpoint(mobile) {
+			position: static;
+		}
+	}
+	@include breakpoint(mobile) {
+		border:0;
 	}
 }
 
@@ -615,6 +624,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		padding-left: 80px;
 		@include breakpoint(desktop) {
 			padding-left: 50px;
+		}
+		@include breakpoint(tablet) {
+			padding-left: 30px;
 		}
 		@include breakpoint(mobile) {
 			padding: 0;
@@ -721,6 +733,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			&:first-child {
 				margin-top: 15px;
 			}
+		}
+		&:first-child {
+			margin-left: 0px;
 		}
 		&:last-child {
 			padding-bottom: 2px;
