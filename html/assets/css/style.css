@@ -7596,25 +7596,26 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Knowledge-Regular';
   src: url("../fonts/Knowledge-Regular.eot");
   src: local("☺"), url("../fonts/Knowledge-Regular.woff") format("woff"), url("../fonts/Knowledge-Regular.ttf") format("truetype"), url("../fonts/Knowledge-Regular.svg") format("svg");
-  font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Knowledge-Medium';
   src: url("../fonts/Knowledge-Medium.eot");
   src: local("☺"), url("../fonts/Knowledge-Medium.woff") format("woff"), url("../fonts/Knowledge-Medium.ttf") format("truetype"), url("../fonts/Knowledge-Medium.svg") format("svg");
-  font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Knowledge-Light';
   src: url("../fonts/Knowledge-Light.eot");
   src: local("☺"), url("../fonts/Knowledge-Light.woff") format("woff"), url("../fonts/Knowledge-Light.ttf") format("truetype"), url("../fonts/Knowledge-Light.svg") format("svg");
-  font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Knowledge-Bold';
   src: url("../fonts/Knowledge-Bold.eot");
   src: local("☺"), url("../fonts/Knowledge-Bold.woff") format("woff"), url("../fonts/Knowledge-Bold.ttf") format("truetype"), url("../fonts/Knowledge-Bold.svg") format("svg");
-  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Knowledge-Black';
+  src: url("../fonts/Knowledge-Black.eot");
+  src: local("☺"), url("../fonts/Knowledge-Black.woff") format("woff"), url("../fonts/Knowledge-Black.ttf") format("truetype"), url("../fonts/Knowledge-Black.svg") format("svg");
   font-style: normal; }
 html, body {
   height: 100%; }
@@ -7638,8 +7639,13 @@ strong {
 img {
   max-width: 100%; }
 
-h1, h2, h3, h4 {
-  font-family: 'Knowledge-bold'; }
+h1, h2 {
+  font-family: 'Knowledge-Black';
+  font-weight: normal; }
+
+h3, h4 {
+  font-family: 'Knowledge-bold';
+  font-weight: normal; }
 
 .container {
   max-width: 1600px; }
@@ -7675,6 +7681,9 @@ h1, h2, h3, h4 {
 .main-menu {
   position: relative;
   z-index: 9; }
+  .main-menu .btn-primary {
+    font-size: 16px;
+    padding: 10px 25px; }
 
 .app-nav .row {
   min-height: 100px; }
@@ -7682,7 +7691,7 @@ h1, h2, h3, h4 {
   max-width: 255px; }
   @media (max-width: 1299px) {
     .app-nav .logo {
-      max-width: 220px; } }
+      max-width: 230px; } }
 
 .position-relative .app-nav {
   position: absolute;
@@ -7716,7 +7725,7 @@ ul.app-menu-list {
   ul.app-menu-list li {
     display: inline-block;
     margin: 0 15px;
-    padding: 35px 0px;
+    padding: 38px 0px;
     color: #ffffff; }
     @media (max-width: 1399px) {
       ul.app-menu-list li {
@@ -7782,15 +7791,20 @@ ul.sub-menu-list {
     color: #ffffff;
     font-size: 46px;
     line-height: 48px;
-    margin: 0; }
+    margin: 0 20px;
+    font-family: 'Knowledge-Black'; }
     .app-header h3 br {
       display: none; }
-      @media (max-width: 1299px) {
+      @media (max-width: 1399px) {
         .app-header h3 br {
           display: block; } }
+    @media (max-width: 1599px) {
+      .app-header h3 {
+        font-size: 36px; } }
     @media (max-width: 1399px) {
       .app-header h3 {
-        font-size: 45px; } }
+        font-size: 45px;
+        line-height: 46px; } }
     @media (max-width: 767px) {
       .app-header h3 {
         font-size: 75px; } }
@@ -7831,8 +7845,8 @@ ul.sub-menu-list {
         display: none !important; } }
   .app-header .faded-text {
     margin: 0;
-    background: url("../images/faded-text.png") center center no-repeat;
-    background-size: 92%; }
+    background: url("../images/faded-text.png") 50px center no-repeat;
+    background-size: calc(100% - 100px) auto; }
     @media (max-width: 767px) {
       .app-header .faded-text {
         background: none; } }
@@ -7858,8 +7872,8 @@ ul.sub-menu-list {
   background-color: #ff9300 !important;
   border-color: #ff9300 !important;
   border-radius: 0px;
-  font-size: 16px;
-  padding: 10px 25px; }
+  font-size: 19px;
+  padding: 16px 25px; }
 
 .sub-menu {
   visibility: hidden;
@@ -7900,7 +7914,7 @@ ul.sub-menu-list {
 /******************* End ***********************/
 /******************* Home sections start *******/
 .about-short {
-  padding: 80px 0px;
+  padding: 80px 0px 90px 0px;
   background: #555555; }
   @media (max-width: 767px) {
     .about-short {
@@ -7930,7 +7944,7 @@ ul.sub-menu-list {
 
 .feature-post {
   border-bottom: 1px solid #999999; }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
     .feature-post {
       border: 0; } }
   .feature-post h3 {
@@ -7941,12 +7955,13 @@ ul.sub-menu-list {
     @media (max-width: 1199px) {
       .feature-post h3 {
         font-size: 31px; } }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       .feature-post h3 br {
         display: none; } }
   .feature-post p {
     font-size: 23px;
-    line-height: 30px; }
+    line-height: 30px;
+    margin-bottom: 1.5rem; }
   .feature-post .btn {
     color: #ff9300;
     font-family: 'Knowledge-Medium';
@@ -7958,16 +7973,22 @@ ul.sub-menu-list {
     max-width: auto;
     width: 100%;
     height: 100%;
-    max-height: 330px;
+    max-height: 340px;
     object-fit: cover; }
   .feature-post .content {
     padding: 40px 0px 30px 0px; }
-    @media (max-width: 1199px) {
+    @media (max-width: 767px) {
       .feature-post .content {
         padding-bottom: 0; } }
     @media (max-width: 767px) {
       .feature-post .content {
         padding-top: 20px; } }
+  @media (max-width: 767px) {
+    .feature-post .date-time strong {
+      display: none; } }
+
+.img img {
+  width: 100%; }
 
 .extra-content {
   font-size: 17px; }
@@ -7975,22 +7996,30 @@ ul.sub-menu-list {
 .text-white .time {
   background: url("../images/icon-time-white.png") 0 center no-repeat;
   background-size: 16px; }
+  @media (max-width: 767px) {
+    .text-white .time {
+      background: url("../images/icon-time.png") 0 center no-repeat;
+      background-size: 16px; } }
 
 .time {
   background: url("../images/icon-time.png") 0 center no-repeat;
-  background-size: 16px;
+  background-size: 18px;
   display: inline-block;
-  padding-left: 20px; }
+  padding-left: 26px; }
 
 .testimonial-title {
   position: relative;
   height: 100%; }
+  @media (max-width: 767px) {
+    .testimonial-title {
+      height: auto; } }
   .testimonial-title .img {
     min-height: 550px;
+    height: 100%;
     background-size: cover; }
     @media (max-width: 767px) {
       .testimonial-title .img {
-        min-height: 330px; } }
+        min-height: 380px; } }
   .testimonial-title .content {
     position: absolute;
     bottom: 0;
@@ -8010,7 +8039,7 @@ ul.sub-menu-list {
         left: inherit;
         right: inherit;
         background: transparent;
-        color: #000000;
+        color: #000000 !important;
         padding: 15px 30px; } }
   .testimonial-title h2 {
     max-width: 690px;
@@ -8028,7 +8057,7 @@ ul.sub-menu-list {
 .testimonial-description {
   height: 100%;
   border: 1px solid #999999;
-  padding: 35px 30px 15px 30px; }
+  padding: 35px 30px 30px 30px; }
   @media (max-width: 1199px) {
     .testimonial-description {
       padding: 20px; } }
@@ -8041,35 +8070,44 @@ ul.sub-menu-list {
     color: #ff9300;
     font-size: 18px;
     margin-bottom: 30px; }
-  .testimonial-description p {
-    font-size: 22.5px;
-    line-height: 45px;
-    font-style: italic;
+  .testimonial-description .content {
     background: url("../images/comma.png") 0 0 no-repeat;
     background-size: 22px;
     padding-top: 40px;
     min-height: 315px; }
     @media (max-width: 1299px) {
+      .testimonial-description .content {
+        min-height: inherit; } }
+  .testimonial-description p {
+    font-size: 22.5px;
+    line-height: 42px;
+    font-style: italic; }
+    @media (max-width: 1299px) {
       .testimonial-description p {
         min-height: inherit; }
         .testimonial-description p br {
           display: none; } }
-  .testimonial-description .person img {
-    max-width: 80px;
-    margin-right: 15px; }
-  .testimonial-description .person h4 {
-    font-size: 18px;
-    line-height: 20px; }
-    .testimonial-description .person h4 span {
-      font-family: 'Knowledge-Regular'; }
-  @media (max-width: 767px) {
-    .testimonial-description .person {
-      justify-content: end; } }
+  .testimonial-description .person {
+    padding-top: 33px; }
+    .testimonial-description .person img {
+      max-width: 80px;
+      margin-right: 15px; }
+    .testimonial-description .person h4 {
+      font-size: 18px;
+      line-height: 20px; }
+      .testimonial-description .person h4 span {
+        font-family: 'Knowledge-Regular'; }
+    @media (max-width: 767px) {
+      .testimonial-description .person {
+        justify-content: end; } }
 
 .article {
-  min-height: 300px;
   height: 100%;
-  display: block; }
+  display: block;
+  border: 1px solid #999999;
+  position: relative; }
+  .article .img {
+    margin: -1px -1px 0px -1px; }
   .article small {
     color: #ff9300;
     font-family: 'Knowledge-Bold';
@@ -8086,17 +8124,24 @@ ul.sub-menu-list {
       .article h4 {
         font-size: 31px; } }
   .article .content {
-    border: 1px solid #999999;
-    border-top: 0px;
-    padding: 35px 30px 30px 30px; }
+    padding: 35px 30px 60px 30px; }
     @media (max-width: 767px) {
       .article .content {
         border: 0;
         padding: 30px 0px 0px 0px; } }
+  .article .extra-content {
+    padding: 0 15px 30px 15px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; }
 
 /******************* End *******/
 /******************* Footer start *******/
 .app-footer {
+  padding-top: 48px;
   margin-top: 40px;
   background-color: #555555;
   color: #ffffff; }
@@ -8124,7 +8169,7 @@ ul.sub-menu-list {
         cursor: pointer; } }
   .app-footer ul.footer-nav {
     list-style: none;
-    margin: 0 0 30px 0px;
+    margin: 0 0 45px 0px;
     padding: 0; }
     @media (max-width: 767px) {
       .app-footer ul.footer-nav {
@@ -8171,7 +8216,10 @@ ul.sub-menu-list {
 @media (max-width: 767px) {
   .footer-logo {
     background: url("../images/footer-nav-arrow-org.png") right center no-repeat;
-    background-size: auto 9px; } }
+    background-size: auto 9px; }
+    .footer-logo.active {
+      background: url("../images/footer-nav-arrow-org-2.png") right center no-repeat;
+      background-size: auto 9px; } }
 
 .policy-links {
   text-align: right; }
@@ -8185,9 +8233,12 @@ ul.sub-menu-list {
         padding: 15px 0;
         margin-left: 30px;
         margin-right: -30px;
-        border-top: 1px solid #717171; }
+        border-top: 1px solid #717171;
+        font-family: 'Knowledge-Regular'; }
         .policy-links a:first-child {
           margin-top: 15px; } }
+    .policy-links a:last-child {
+      padding-bottom: 2px; }
   @media (max-width: 767px) {
     .policy-links {
       display: none;
@@ -8236,7 +8287,7 @@ ul.sub-menu-list {
       background: #4d4d4d url("../images/arrow-down-w.png") 330px center no-repeat;
       background-size: auto 11px; }
       .offCanvas-nav .level-0 .has-subMenu a:hover, .offCanvas-nav .level-0 .has-subMenu a.active {
-        background: #ff9300 url("../images/arrow-left-w.png") 330px center no-repeat;
+        background: #ff9300 url("../images/arrow-down-w.png") 330px center no-repeat;
         background-size: auto 11px;
         color: #ffffff; }
   .offCanvas-nav .level-1 {
@@ -8254,7 +8305,7 @@ ul.sub-menu-list {
 .nav-head {
   width: 100%;
   color: #ff9300;
-  padding: 30px 25px 30px 30px;
+  padding: 35px 25px 35px 30px;
   background-color: #363636;
   font-family: 'Knowledge-Bold';
   font-size: 20px; }

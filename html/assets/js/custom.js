@@ -22,13 +22,17 @@ $(document).ready(function(){
     $(this).parent("nav").toggleClass("show");
    });
    $(".footer-logo").click(function(){
+    $(this).toggleClass("active");
     $(".policy-links").toggleClass("show");
    });
    $(".btn-mobileMenu").click(function(){
-    $("body").addClass("translate-x");
+    $("body").toggleClass("translate-x");
+    setTimeout(function(){
+      $(".has-subMenu a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
+    }, 1000);
    });
    $(".offCanvas-nav button").click(function(){
-    $("body").removeClass("translate-x");
+    $("body").toggleClass("translate-x");
 
     setTimeout(function(){
     $(".has-subMenu a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
