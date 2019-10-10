@@ -7647,6 +7647,9 @@ h3, h4 {
   font-family: 'Knowledge-bold';
   font-weight: normal; }
 
+h2 {
+  font-size: 45px; }
+
 .container {
   max-width: 1600px; }
 
@@ -7657,7 +7660,11 @@ h3, h4 {
 
   .container, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
     padding-right: 20px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0; } }
 .mt {
   margin-top: 40px; }
   @media (max-width: 1399px) {
@@ -7800,7 +7807,7 @@ ul.sub-menu-list {
           display: block; } }
     @media (max-width: 1599px) {
       .app-header h3 {
-        font-size: 36px; } }
+        font-size: 42px; } }
     @media (max-width: 1399px) {
       .app-header h3 {
         font-size: 45px;
@@ -8155,6 +8162,9 @@ ul.sub-menu-list {
   margin-top: 40px;
   background-color: #555555;
   color: #ffffff; }
+  @media (max-width: 767px) {
+    .app-footer {
+      padding-top: 0px; } }
   .app-footer .container {
     max-width: 1400px;
     padding-left: 80px; }
@@ -8301,8 +8311,12 @@ ul.sub-menu-list {
     .offCanvas-nav .level-0 .has-subMenu a {
       background: #4d4d4d url("../images/arrow-down-w.png") 330px center no-repeat;
       background-size: auto 11px; }
-      .offCanvas-nav .level-0 .has-subMenu a:hover, .offCanvas-nav .level-0 .has-subMenu a.active {
+      .offCanvas-nav .level-0 .has-subMenu a:hover {
         background: #ff9300 url("../images/arrow-down-w.png") 330px center no-repeat;
+        background-size: auto 11px;
+        color: #ffffff; }
+      .offCanvas-nav .level-0 .has-subMenu a.active {
+        background: #ff9300 url("../images/arrow-up-w.png") 330px center no-repeat;
         background-size: auto 11px;
         color: #ffffff; }
   .offCanvas-nav .level-1 {
@@ -8341,5 +8355,58 @@ ul.sub-menu-list {
   .translate-x .app-wrapper {
     transform: translateX(-380px);
     transition: all 1s ease-in-out; }
+
+/******************* Area of focus page *******/
+.area-focus {
+  padding: 70px 0px 46px 0px;
+  background: #555555; }
+  @media (max-width: 767px) {
+    .area-focus {
+      padding: 50px 0px 40px 0px; } }
+  .area-focus p {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 35px; }
+    @media (max-width: 1199px) {
+      .area-focus p {
+        font-size: 20px; } }
+    @media (max-width: 767px) {
+      .area-focus p {
+        font-size: 27px; } }
+  .area-focus h2 {
+    margin: 0px 0 10px 0; }
+
+.key {
+  padding: 70px 0px 70px 0px; }
+  .key h2 {
+    text-align: center;
+    margin-bottom: 50px; }
+  .key h3 {
+    font-size: 46px;
+    color: #ffffff;
+    padding: 30px 0 30px 35px;
+    margin: 0;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.8+44,1+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 44%, black 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 44%, black 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 44%, black 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+  .key .content {
+    padding: 50px 50px;
+    border: 1px solid #999999;
+    border-left: 0;
+    height: 100%; }
+  .key p {
+    font-size: 30px;
+    font-family: 'Knowledge-Regular'; }
+  .key .img {
+    min-height: 400px;
+    height: 100%;
+    background-size: cover !important; }
 
 /*# sourceMappingURL=style.css.map */
