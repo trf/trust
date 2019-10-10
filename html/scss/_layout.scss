@@ -503,11 +503,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			padding:15px 30px;
 		}
 	}
-	h2 {
+	h3 {
 		max-width: 690px;
 		font-family: 'Knowledge-Bold';
 		font-size: 47px;
 		line-height: 50px;
+		text-align: left;
 		@include breakpoint(desktop) {
 			font-size: 37px;
 		}
@@ -915,6 +916,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		min-height: 400px;
 		height: 100%;
 		background-size: cover !important;
+	}
+}
+.updates {
+	h2 {
+		text-align: center;
 	}
 }
 
