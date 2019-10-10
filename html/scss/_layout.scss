@@ -607,6 +607,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		width: 100%;
 		@include breakpoint(mobile) {
 			position: static;
+			padding: 0px;
 		}
 	}
 	@include breakpoint(mobile) {

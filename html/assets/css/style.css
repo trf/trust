@@ -8142,7 +8142,8 @@ ul.sub-menu-list {
     width: 100%; }
     @media (max-width: 767px) {
       .article .extra-content {
-        position: static; } }
+        position: static;
+        padding: 0px; } }
   @media (max-width: 767px) {
     .article {
       border: 0; } }
