@@ -7649,6 +7649,9 @@ h3, h4 {
 
 h2 {
   font-size: 45px; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 40px; } }
 
 .container {
   max-width: 1600px; }
@@ -8361,16 +8364,39 @@ ul.sub-menu-list {
     transition: all 1s ease-in-out; }
 
 /******************* Area of focus page *******/
+.head-title-mob-2 {
+  padding-bottom: 110px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,000000+100&0+0,0.4+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 );
+  /* IE6-9 */ }
+  .head-title-mob-2 h3 {
+    text-align: center; }
+    .head-title-mob-2 h3 small {
+      font-size: 25px;
+      line-height: 25px;
+      color: #ff9300;
+      display: block; }
+    @media (max-width: 767px) {
+      .head-title-mob-2 h3 {
+        width: 100%;
+        font-size: 61px;
+        line-height: 61px; } }
+
 .area-focus {
-  padding: 70px 0px 46px 0px;
+  padding: 70px 0px 60px 0px;
   background: #555555; }
   @media (max-width: 767px) {
     .area-focus {
       padding: 50px 0px 40px 0px; } }
   .area-focus p {
     font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 35px; }
+    line-height: 35px; }
     @media (max-width: 1199px) {
       .area-focus p {
         font-size: 20px; } }
@@ -8382,9 +8408,16 @@ ul.sub-menu-list {
 
 .key {
   padding: 70px 0px 60px 0px; }
+  @media (max-width: 767px) {
+    .key {
+      border-top: 1px solid #999999;
+      padding: 45px 0px; } }
   .key h2 {
     text-align: center;
     margin-bottom: 50px; }
+    @media (max-width: 767px) {
+      .key h2 {
+        margin-bottom: 40px; } }
   .key h3 {
     font-size: 46px;
     color: #ffffff;
@@ -8566,5 +8599,12 @@ ul.sub-menu-list {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d001e5f', endColorstr='#001e5f',GradientType=1 );
     /* IE6-9 */ }
+
+.we-do {
+  color: #ffffff; }
+  @media (max-width: 767px) {
+    .we-do {
+      background-color: #ffffff;
+      color: #000000; } }
 
 /*# sourceMappingURL=style.css.map */
