@@ -921,6 +921,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	width: 100%;
 }
 .slider-1 {
+	.container {
+		overflow: hidden;
+	}
 padding: 100px 0px;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.7+40,0.7+60,0.7+60,0+100 */
 background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -943,6 +946,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		font-size: 29px;
 		line-height: 39px;
 		color: $white;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		width: 6%;
 	}
 }
 .slider-2 {

@@ -8423,6 +8423,8 @@ ul.sub-menu-list {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */ }
+  .slider-1 .container {
+    overflow: hidden; }
   .slider-1 h2 {
     font-size: 50px;
     line-height: 55px;
@@ -8437,6 +8439,8 @@ ul.sub-menu-list {
     font-size: 29px;
     line-height: 39px;
     color: #ffffff; }
+  .slider-1 .carousel-control-prev, .slider-1 .carousel-control-next {
+    width: 6%; }
 
 .slider-2 {
   padding-bottom: 58px; }
