@@ -1026,6 +1026,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 .slider-2 {
 	padding-bottom: 58px;
+	@include breakpoint(mobile) {
+		padding-bottom: 32px;
+	}
 	.carousel-indicators {
 		bottom: -58px;
 		margin-bottom: 0;
