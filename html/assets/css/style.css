@@ -8401,9 +8401,6 @@ ul.sub-menu-list {
   .area-focus p {
     font-size: 30px;
     line-height: 35px; }
-    @media (max-width: 1199px) {
-      .area-focus p {
-        font-size: 20px; } }
     @media (max-width: 767px) {
       .area-focus p {
         font-size: 27px; } }
@@ -8437,6 +8434,9 @@ ul.sub-menu-list {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
     /* IE6-9 */ }
+    @media (max-width: 1023px) {
+      .key h3 {
+        font-size: 40px; } }
     @media (max-width: 767px) {
       .key h3 {
         font-size: 31.5px; } }
@@ -8445,6 +8445,10 @@ ul.sub-menu-list {
     border: 1px solid #999999;
     border-left: 0;
     height: 100%; }
+    @media (max-width: 991px) {
+      .key .content {
+        border-left: 1px solid #999999;
+        padding: 35px 35px; } }
   .key p {
     font-size: 30px;
     font-family: 'Knowledge-Regular'; }
@@ -8543,7 +8547,7 @@ ul.sub-menu-list {
     margin-bottom: 22px; }
 
 .initiative-list .loop {
-  background-size: auto 100% !important; }
+  background-size: cover !important; }
 
 .gradientColor {
   padding: 50px 0px;
@@ -8555,16 +8559,9 @@ ul.sub-menu-list {
   .gradientColor .text-white {
     position: relative;
     z-index: 2; }
-  .gradientColor img {
-    max-height: 70px;
-    max-width: 200px;
-    width: auto; }
-    @media (max-width: 767px) {
-      .gradientColor img {
-        max-width: 250px; } }
   .gradientColor .btn {
-    margin-top: 150px; }
-    @media (max-width: 767px) {
+    margin-top: 185px; }
+    @media (max-width: 991px) {
       .gradientColor .btn {
         margin-top: 15px; } }
   .gradientColor .content {
@@ -8581,10 +8578,15 @@ ul.sub-menu-list {
           line-height: 37px; } }
   .gradientColor .left-brdrBox {
     padding: 50px 0px; }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .gradientColor .left-brdrBox {
         padding-top: 0px;
         padding-bottom: 50px; } }
+    .gradientColor .left-brdrBox .img {
+      padding-right: 60px; }
+      @media (max-width: 991px) {
+        .gradientColor .left-brdrBox .img {
+          padding-right: 0px; } }
     .gradientColor .left-brdrBox:after {
       content: "";
       width: 1px;
@@ -8594,77 +8596,33 @@ ul.sub-menu-list {
       bottom: 0;
       z-index: 2;
       background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%);
-      /* FF3.6-15 */
       background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%);
-      /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
-      /* IE6-9 */ }
-      @media (max-width: 767px) {
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); }
+      @media (max-width: 991px) {
         .gradientColor .left-brdrBox:after {
-          width: calc(100% - 100px);
+          width: 300px;
           height: 1px;
-          right: 50px;
-          left: 50px;
+          right: auto;
+          left: 50%;
           top: inherit;
-          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cfdde9+0,cfdde9+20,cfdde9+80,cfdde9+100&0+0,0.9+20,0.9+80,0+100 */
+          transform: translateX(-50%);
           background: -moz-linear-gradient(left, rgba(207, 221, 233, 0) 0%, rgba(207, 221, 233, 0.9) 20%, rgba(207, 221, 233, 0.9) 80%, rgba(207, 221, 233, 0) 100%);
-          /* FF3.6-15 */
           background: -webkit-linear-gradient(left, rgba(207, 221, 233, 0) 0%, rgba(207, 221, 233, 0.9) 20%, rgba(207, 221, 233, 0.9) 80%, rgba(207, 221, 233, 0) 100%);
-          /* Chrome10-25,Safari5.1-6 */
           background: linear-gradient(to right, rgba(207, 221, 233, 0) 0%, rgba(207, 221, 233, 0.9) 20%, rgba(207, 221, 233, 0.9) 80%, rgba(207, 221, 233, 0) 100%);
-          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', endColorstr='#00cfdde9',GradientType=1 );
-          /* IE6-9 */ } }
-  .gradientColor.blue-1 {
-    background: -moz-linear-gradient(left, rgba(0, 84, 143, 0) 0%, rgba(0, 84, 143, 0.8) 20%, #00548f 80%, #00548f 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0, 84, 143, 0) 0%, rgba(0, 84, 143, 0.8) 20%, #00548f 80%, #00548f 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(0, 84, 143, 0) 0%, rgba(0, 84, 143, 0.8) 20%, #00548f 80%, #00548f 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000548f', endColorstr='#00548f',GradientType=1 );
-    /* IE6-9 */ }
-    @media (max-width: 767px) {
-      .gradientColor.blue-1 {
-        background: rgba(0, 84, 143, 0.9); } }
-  .gradientColor.blue-2 {
-    background: -moz-linear-gradient(left, rgba(30, 94, 157, 0.05) 0%, rgba(30, 94, 157, 0.9) 40%, #1e5e9d 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(30, 94, 157, 0.05) 0%, rgba(30, 94, 157, 0.9) 40%, #1e5e9d 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(30, 94, 157, 0.05) 0%, rgba(30, 94, 157, 0.9) 40%, #1e5e9d 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1e5e9d', endColorstr='#1e5e9d',GradientType=1 );
-    /* IE6-9 */ }
-    @media (max-width: 767px) {
-      .gradientColor.blue-2 {
-        background: rgba(30, 94, 157, 0.9); } }
-  .gradientColor.gray {
-    background: -moz-linear-gradient(left, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.9) 40%, #363636 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.9) 40%, #363636 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.9) 40%, #363636 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d363636', endColorstr='#363636',GradientType=1 );
-    /* IE6-9 */ }
-    @media (max-width: 767px) {
-      .gradientColor.gray {
-        background: rgba(54, 54, 54, 0.9); } }
-  .gradientColor.blue-3 {
-    background: -moz-linear-gradient(left, rgba(0, 30, 95, 0.05) 0%, rgba(0, 30, 95, 0.9) 40%, #001e5f 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0, 30, 95, 0.05) 0%, rgba(0, 30, 95, 0.9) 40%, #001e5f 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(0, 30, 95, 0.05) 0%, rgba(0, 30, 95, 0.9) 40%, #001e5f 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d001e5f', endColorstr='#001e5f',GradientType=1 );
-    /* IE6-9 */ }
-    @media (max-width: 767px) {
-      .gradientColor.blue-3 {
-        background: rgba(0, 30, 95, 0.9); } }
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', endColorstr='#00cfdde9',GradientType=1 ); } }
+  @media (max-width: 991px) {
+    .gradientColor.blue-1 {
+      background: rgba(0, 84, 143, 0.9); } }
+  @media (max-width: 991px) {
+    .gradientColor.blue-2 {
+      background: rgba(30, 94, 157, 0.9); } }
+  @media (max-width: 991px) {
+    .gradientColor.gray {
+      background: rgba(54, 54, 54, 0.9); } }
+  @media (max-width: 991px) {
+    .gradientColor.blue-3 {
+      background: rgba(0, 30, 95, 0.9); } }
 
 .we-do {
   color: #ffffff; }
@@ -8672,5 +8630,17 @@ ul.sub-menu-list {
     .we-do {
       background-color: #ffffff;
       color: #000000; } }
+
+.logoTrustlaw {
+  max-width: 196px; }
+
+.logoTrustconf {
+  max-width: 316px; }
+
+.logoNewstrust {
+  max-width: 196px; }
+
+.logoMediadev {
+  max-width: 202px; }
 
 /*# sourceMappingURL=style.css.map */
