@@ -7933,6 +7933,8 @@ ul.sub-menu-list {
   @media (max-width: 767px) {
     .about-short {
       padding: 50px 0px 60px 0px; } }
+  .about-short .container {
+    max-width: 1330px; }
   .about-short p {
     font-size: 30px;
     line-height: 35px;
@@ -7948,7 +7950,7 @@ ul.sub-menu-list {
         display: none; } }
   .about-short h2 {
     font-size: 50px;
-    margin: 0px 0 10px 0; }
+    margin: 0px 0 30px 0; }
     @media (max-width: 1399px) {
       .about-short h2 {
         font-size: 45px; } }
@@ -8394,6 +8396,8 @@ ul.sub-menu-list {
   @media (max-width: 767px) {
     .area-focus {
       padding: 50px 0px 40px 0px; } }
+  .area-focus .container {
+    max-width: 1330px; }
   .area-focus p {
     font-size: 30px;
     line-height: 35px; }
@@ -8404,7 +8408,7 @@ ul.sub-menu-list {
       .area-focus p {
         font-size: 27px; } }
   .area-focus h2 {
-    margin: 0px 0 10px 0; }
+    margin: 0px 0 30px 0; }
 
 .key {
   padding: 70px 0px 60px 0px; }
@@ -8414,7 +8418,7 @@ ul.sub-menu-list {
       padding: 45px 0px; } }
   .key h2 {
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 70px; }
     @media (max-width: 767px) {
       .key h2 {
         margin-bottom: 40px; } }
@@ -8525,7 +8529,8 @@ ul.sub-menu-list {
 .updates {
   margin-top: 62px; }
   .updates h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 22px; }
 
 .gradientColor {
   padding: 50px 0px;
