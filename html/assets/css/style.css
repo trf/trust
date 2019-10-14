@@ -8415,7 +8415,8 @@ ul.sub-menu-list {
   @media (max-width: 767px) {
     .key {
       border-top: 1px solid #999999;
-      padding: 45px 0px; } }
+      padding: 45px 0px;
+      margin: 0 -30px; } }
   .key h2 {
     text-align: center;
     margin-bottom: 70px; }

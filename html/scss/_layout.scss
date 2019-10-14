@@ -923,6 +923,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	@include breakpoint(mobile) {
 		border-top: 1px solid $border;
 		padding: 45px 0px;
+		margin:0 -30px;
 	}
 	h2 {
 		text-align: center;
