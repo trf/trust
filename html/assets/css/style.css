@@ -7632,6 +7632,9 @@ a, button {
   outline: 0px !important;
   text-decoration: none; }
 
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important; }
+
 strong {
   font-family: 'Knowledge-Medium';
   font-weight: 400; }
@@ -8125,12 +8128,9 @@ ul.sub-menu-list {
   position: relative; }
   .article .img {
     margin: -1px -1px 0px -1px;
-    height: 230px;
     background-size: cover !important;
-    background-position: center center; }
-    @media (max-width: 991px) {
-      .article .img {
-        height: 380px; } }
+    background-position: center center;
+    padding: 35% 0; }
   .article small {
     color: #ff9300;
     font-family: 'Knowledge-Bold';

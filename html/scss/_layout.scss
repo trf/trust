@@ -34,6 +34,7 @@
 html, body { height: 100%; }
 body { min-width: 445px; font-family: 'Knowledge-Light'; font-size: 16px; color: $black; overflow-x:hidden;}
 a, button { cursor: pointer; outline: 0px !important; text-decoration: none}
+a:hover, a:visited, a:link, a:active {text-decoration: none !important;}
 strong {font-family: 'Knowledge-Medium'; font-weight: 400;}
 img {max-width: 100%;}
 h1,h2 {font-family: 'Knowledge-Black'; font-weight: normal}
@@ -585,13 +586,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border:1px solid $border;
 	position: relative;
 	.img {
-		margin:-1px -1px 0px -1px;
-		height: 230px;
+		margin: -1px -1px 0px -1px;
 		background-size: cover !important;
 		background-position: center center;
-		@include breakpoint(tablet) {
-			height: 380px;
-		}
+		padding: 35% 0;
 	}
 	small {
 		color: $orange;
