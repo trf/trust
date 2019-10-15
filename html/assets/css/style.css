@@ -8124,7 +8124,13 @@ ul.sub-menu-list {
   border: 1px solid #999999;
   position: relative; }
   .article .img {
-    margin: -1px -1px 0px -1px; }
+    margin: -1px -1px 0px -1px;
+    height: 230px;
+    background-size: cover !important;
+    background-position: center center; }
+    @media (max-width: 991px) {
+      .article .img {
+        height: 380px; } }
   .article small {
     color: #ff9300;
     font-family: 'Knowledge-Bold';

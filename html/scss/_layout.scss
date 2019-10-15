@@ -586,6 +586,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	position: relative;
 	.img {
 		margin:-1px -1px 0px -1px;
+		height: 230px;
+		background-size: cover !important;
+		background-position: center center;
+		@include breakpoint(tablet) {
+			height: 380px;
+		}
 	}
 	small {
 		color: $orange;
