@@ -7988,12 +7988,19 @@ ul.sub-menu-list {
     background-size: 15px;
     padding: 0 20px 0 0px;
     font-size: 17px; }
-  .feature-post img {
+  .feature-post .img {
     max-width: auto;
     width: 100%;
     height: 100%;
     max-height: 340px;
-    object-fit: cover; }
+    background-size: cover !important; }
+    @media (max-width: 991px) {
+      .feature-post .img {
+        padding: 35% 0;
+        max-height: inherit; } }
+    @media (max-width: 767px) {
+      .feature-post .img {
+        width: calc(100% + 60px); } }
   .feature-post .content {
     padding: 40px 0px 30px 0px; }
     @media (max-width: 767px) {
@@ -8038,7 +8045,8 @@ ul.sub-menu-list {
     background-size: cover; }
     @media (max-width: 991px) {
       .testimonial-title .img {
-        min-height: 380px; } }
+        min-height: inherit;
+        padding: 35% 0; } }
   .testimonial-title .content {
     position: absolute;
     bottom: 0;
