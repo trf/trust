@@ -28,18 +28,18 @@ $(document).ready(function(){
    $(".btn-mobileMenu").click(function(){
     $("body").toggleClass("translate-x");
     setTimeout(function(){
-      $(".has-subMenu a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
+      $(".has-subMenu > a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
     }, 1000);
    });
    $(".offCanvas-nav button").click(function(){
     $("body").toggleClass("translate-x");
 
     setTimeout(function(){
-    $(".has-subMenu a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
+    $(".has-subMenu > a").removeClass("active").next(".level-1").removeClass("show", 1000, "easeInBack");
   }, 1000);
 
    });
-   $(".has-subMenu a").click(function(){
+   $(".has-subMenu > a").click(function(){
     $(this).toggleClass("active").next(".level-1").toggleClass("show");
    });
 });
