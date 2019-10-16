@@ -8179,6 +8179,7 @@ ul.sub-menu-list {
 /******************* Footer start *******/
 .app-footer {
   padding-top: 48px;
+  overflow: hidden;
   margin-top: 40px;
   background-color: #555555;
   color: #ffffff; }

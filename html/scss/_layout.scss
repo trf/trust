@@ -645,6 +645,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /******************* Footer start *******/
 .app-footer {
 	padding-top: 48px;
+	overflow: hidden;
 	@include breakpoint(mobile) {
 		padding-top: 0px;
 	}
