@@ -659,7 +659,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			padding-left: 30px;
 		}
 		@include breakpoint(mobile) {
-			padding: 0;
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 	margin-top: 40px;

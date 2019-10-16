@@ -8197,7 +8197,8 @@ ul.sub-menu-list {
         padding-left: 30px; } }
     @media (max-width: 767px) {
       .app-footer .container {
-        padding: 0; } }
+        padding-left: 0;
+        padding-right: 0; } }
   .app-footer h6 {
     font-size: 13.5px;
     margin-bottom: 25px;
