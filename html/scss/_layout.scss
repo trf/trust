@@ -172,6 +172,11 @@ ul.app-menu-list {
 			padding-right: 22px;
 		}
 	}
+	li.active > a {
+		color: $orange !important;
+		background: url("../images/arrow-down-orange.png") right center no-repeat;
+		background-size: 15px;
+	}
 }
 
 ul.sub-menu-list {
@@ -1012,6 +1017,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		@include breakpoint(smdesktop) {
 			margin-right: 40px;
 		}
+		img {
+			max-width: 250px;
+		}
 	}
 	p {
 		font-size: 29px;
@@ -1202,4 +1210,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 }
 .logoMediadev {
 	max-width: 202px;
+}
+/********************* services ********************/
+.inside-menu {
+	margin:0; padding: 0;
+	background-color: $primary-color;
+	border-bottom: 1px solid $white;
+	ul {
+		margin:0; padding: 0;
+		list-style: none;
+		display: flex;
+	}
+	li {
+		color: $white;
+		border-left: 1px solid $white;
+		flex: 1 1 auto;
+		&:first-child {
+			border: 0;
+		}
+		&.join, &.login {
+			background: $orange;
+			border-color:$primary-color;
+		}
+	}
+	a {
+		font-size: 16px;
+		padding: 15px 30px;
+		display: block;
+		color: $white;
+		text-align: center;
+	}
+}
+.whatWeDo {
+	padding: 70px 0px 60px 0px;
+	background:$secondary-color;
+	color: #fff;
 }
