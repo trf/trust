@@ -32,13 +32,13 @@
 
 
 html, body { height: 100%; }
-body { min-width: 445px; font-family: 'Knowledge-Light'; font-size: 16px; color: $black; overflow-x:hidden;}
+body { min-width: 445px; font-family: 'Knowledge-Light'; font-size: 16px; line-height: 1.4; color: $black; overflow-x:hidden;}
 a, button { cursor: pointer; outline: 0px !important; text-decoration: none}
 a:hover, a:visited, a:link, a:active {text-decoration: none !important;}
 strong {font-family: 'Knowledge-Medium'; font-weight: 400;}
 img {max-width: 100%;}
-h1,h2 {font-family: 'Knowledge-Black'; font-weight: normal}
-h3,h4 {font-family: 'Knowledge-bold'; font-weight: normal}
+h1,h2 {font-family: 'Knowledge-Black'; font-weight: normal; line-height: 100%; }
+h3,h4 {font-family: 'Knowledge-bold'; font-weight: normal; line-height: 100%; }
 h2 {
 	font-size: 45px;
 	@include breakpoint(mobile) {
@@ -1212,6 +1212,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 	max-width: 202px;
 }
 /********************* services ********************/
+.space-y {
+	padding-top: 70px;
+	padding-bottom: 60px;
+}
 .inside-menu {
 	margin:0; padding: 0;
 	background-color: $primary-color;
@@ -1239,10 +1243,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 		display: block;
 		color: $white;
 		text-align: center;
+		&:hover {
+			background: $orange;
+		}
 	}
 }
 .whatWeDo {
-	padding: 70px 0px 60px 0px;
 	background:$secondary-color;
 	color: #fff;
+}
+.whatWeDo-items {
+	margin-top: 40px;
+	.item {
+		padding-top: 35px;
+		padding-bottom: 20px;
+		border-top: 1px solid $white;
+		border-left: 1px solid $white;
+		&:nth-child(1), &:nth-child(2) {
+			border-top: 0;
+		}
+		&:nth-child(odd) { 
+			border-left: 0;
+		}
+		&:nth-child(odd) {
+			padding-left: 35px;
+			padding-right: 70px;
+		}
+		&:nth-child(even) {
+			padding-left: 70px;
+			padding-right: 35px;
+		}
+		 p {
+			font-size: 25px;
+		}
+	}
+}
+.content-title {
+	h2 {
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+.whereWeAre {
+	h2 {
+		color: $primary-color;
+	}
+}
+.location-map {
+	margin-top: 30px;
 }
