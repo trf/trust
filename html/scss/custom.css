@@ -7624,6 +7624,7 @@ body {
   min-width: 445px;
   font-family: 'Knowledge-Light';
   font-size: 16px;
+  line-height: 1.4;
   color: #000000;
   overflow-x: hidden; }
 
@@ -7644,11 +7645,13 @@ img {
 
 h1, h2 {
   font-family: 'Knowledge-Black';
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 100%; }
 
 h3, h4 {
   font-family: 'Knowledge-bold';
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 100%; }
 
 h2 {
   font-size: 45px; }
@@ -7759,6 +7762,10 @@ ul.app-menu-list {
     background: url("../images/arrow-down-white.png") right center no-repeat;
     background-size: 15px;
     padding-right: 22px; }
+  ul.app-menu-list li.active > a {
+    color: #ff9300 !important;
+    background: url("../images/arrow-down-orange.png") right center no-repeat;
+    background-size: 15px; }
 
 ul.sub-menu-list {
   list-style: none;
@@ -8507,6 +8514,8 @@ ul.sub-menu-list {
     @media (max-width: 1279px) {
       .slider-1 h2 {
         margin-right: 40px; } }
+    .slider-1 h2 img {
+      max-width: 250px; }
   .slider-1 p {
     font-size: 29px;
     line-height: 39px;
@@ -8658,5 +8667,85 @@ ul.sub-menu-list {
 
 .logoMediadev {
   max-width: 202px; }
+
+/********************* services ********************/
+.space-y {
+  padding-top: 70px;
+  padding-bottom: 60px; }
+
+.inside-menu {
+  margin: 0;
+  padding: 0;
+  background-color: #113d66;
+  border-bottom: 1px solid #ffffff; }
+  .inside-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; }
+  .inside-menu li {
+    color: #ffffff;
+    border-left: 1px solid #ffffff;
+    flex: 1 1 auto; }
+    .inside-menu li:first-child {
+      border: 0; }
+    .inside-menu li.join, .inside-menu li.login {
+      background: #ff9300;
+      border-color: #113d66; }
+  .inside-menu a {
+    font-size: 16px;
+    padding: 15px 30px;
+    display: block;
+    color: #ffffff;
+    text-align: center; }
+    .inside-menu a:hover {
+      background: #ff9300; }
+
+.whatWeDo-items {
+  margin-top: 40px; }
+  .whatWeDo-items .item {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff; }
+    .whatWeDo-items .item:nth-child(1), .whatWeDo-items .item:nth-child(2) {
+      border-top: 0; }
+    .whatWeDo-items .item:nth-child(odd) {
+      border-left: 0; }
+    .whatWeDo-items .item:nth-child(odd) {
+      padding-left: 35px;
+      padding-right: 70px; }
+    .whatWeDo-items .item:nth-child(even) {
+      padding-left: 70px;
+      padding-right: 35px; }
+    .whatWeDo-items .item p {
+      font-size: 25px; }
+
+.content-title h2 {
+  margin-bottom: 25px; }
+.content-title p {
+  font-size: 30px;
+  line-height: 40px; }
+
+.whereWeAre h2 {
+  color: #113d66; }
+
+.location-map {
+  margin-top: 30px; }
+
+.blueClr-primary {
+  background-color: #113d66;
+  color: #ffffff; }
+
+.blueClr-secondary {
+  background-color: #1c5489;
+  color: #ffffff; }
+
+.orangeClr {
+  color: #ff9300; }
+
+.inner-wrap {
+  max-width: 1280px;
+  margin: auto; }
 
 /*# sourceMappingURL=custom.css.map */
