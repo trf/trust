@@ -115,7 +115,7 @@ h2 {
 	ul.app-menu-list li a {
 		color: $black !important;
 	}
-	ul.app-menu-list li:hover a {
+	ul.app-menu-list > li:hover a {
 		color: $orange !important;
 	}
 	ul.app-menu-list li:hover li a {
@@ -321,7 +321,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border-color: $orange !important;
 	border-radius: 0px;
 	font-size: 19px;
-	padding: 16px 25px;
+	padding: 15px 25px;
 }
 .sub-menu {
 	visibility: hidden;
@@ -611,6 +611,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 	h4 {
 		font-size: 28px;
+		line-height: 34px;
 		margin:10px 0  20px 0px;
 		min-height: 100px;
 		@include breakpoint(desktop) {
@@ -886,8 +887,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .translate-x {
 	overflow: hidden !important;
 	.app-wrapper {
-		transform: translateX(-380px);
-		transition: all 1s ease-in-out;
+		@include breakpoint(desktop) {
+			transform: translateX(-380px);
+			transition: all 1s ease-in-out;
+			}
 	}
 } 
 /******************* Area of focus page *******/
@@ -995,6 +998,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 40%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 .container {
 	overflow: hidden;
+	padding-top: 30px;
 	@include breakpoint(mddesktop) {
 		max-width: 1100px;
 	}
@@ -1030,7 +1034,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		}
 	}
 	.content {
-		padding: 110px 0 100px 60px;
+		padding: 120px 0 100px 60px;
 		&:before {
 			content: "";
 			position: absolute;
@@ -1215,6 +1219,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 .space-y {
 	padding-top: 70px;
 	padding-bottom: 60px;
+	@include breakpoint(mobile) {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
 }
 .inside-menu {
 	margin:0; padding: 0;
@@ -1246,6 +1254,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 		&:hover {
 			background: $orange;
 		}
+		@include breakpoint(laptop) {
+			font-size: 13px;
+		}
+
 	}
 }
 .whatWeDo {
@@ -1260,19 +1272,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 		padding-bottom: 20px;
 		border-top: 1px solid $white;
 		border-left: 1px solid $white;
+		@include breakpoint(tablet) {
+			border:0;
+			border-top: 1px solid $white;
+			padding: 25px 0 15px 0px;
+			&:first-child {
+				border: 0 !important;
+				padding-top: 0 !important;
+			}
+			&:last-child {
+				padding-bottom: 0 !important;
+			}
+		}
 		&:nth-child(1), &:nth-child(2) {
 			border-top: 0;
+			@include breakpoint(tablet) {
+				border:0;
+				border-top: 1px solid $white;
+			 }
 		}
 		&:nth-child(odd) { 
 			border-left: 0;
 		}
 		&:nth-child(odd) {
-			padding-left: 35px;
-			padding-right: 70px;
+				padding-left: 35px;
+				padding-right: 70px;
+			@include breakpoint(tablet) {
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
 		&:nth-child(even) {
 			padding-left: 70px;
 			padding-right: 35px;
+			@include breakpoint(tablet) {
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
 		 p {
 			font-size: 25px;
@@ -1286,6 +1322,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 	p {
 		font-size: 30px;
 		line-height: 40px;
+
+		@include breakpoint(laptop) {
+			line-height: inherit;
+		}
 	}
 }
 .whereWeAre {
@@ -1324,10 +1364,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 		&:nth-child(odd) {
 			padding-left: 50px;
 			padding-right: 70px;
+			@include breakpoint(laptop) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
 		}
 		&:nth-child(even) {
 			padding-left: 70px;
 			padding-right: 50px;
+			@include breakpoint(laptop) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
 		}
 	}
  }
@@ -1343,6 +1391,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 		color: #d9dce3;
 		font-size: 35px;
 		margin-bottom: 45px;
+		@include breakpoint(mobile) {
+			font-size: 32px;
+		}
 	}
 }	
 .select-lang {
@@ -1399,6 +1450,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cfdde9', e
 }
 .video-section {
 	background-color: $black;
-	min-height: 600px;
+	min-height: 700px;
 	margin-bottom: 50px;
+	position: relative;
+	.btn-play {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 150px;
+		height: 100px;
+		background: url("../images/btn-play.png") 0 0 no-repeat;
+		background-size: 100% 100%;
+		border: 0;
+		@include breakpoint(mobile) {
+			width: 110px;
+			height: 75px;
+		}
+	}
+	@include breakpoint(mobile) {
+		min-height: 400px;
+	}
+}
+.stories {
+	padding-bottom: 20px;
+	h2 {
+		color: #113d66;
+	}
+	p {
+		color: #113d66;
+		line-height: 36px;
+		margin-bottom: 0;
+	}
+	.btn {
+		min-width: 170px;
+	}
+}
+.m-slide-logo {
+	text-align: center;
+	.logo {
+		max-width: 250px;
+	}
 }
